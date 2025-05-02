@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FutureInThePast.Quests;
 using GluonGui.Dialog;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,8 +14,10 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [Header("Dialog properties")]
         [SerializeField] private DialogHistoryEntry historyEntryPrefab;
         [SerializeField] private GameObject historyPanel;
+        [SerializeField] private RectTransform historyViewport;
         [SerializeField] private ResponseButton responsePrefab;
         [SerializeField] private GameObject responsePanel;
+        [SerializeField] private TMP_Text questionText;
 
         private int selectedButton = -1;
 
@@ -22,13 +25,14 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
 
         public IEnumerator WaitForResponse(DialogClip clip, QuestManager quests)
         {
-            foreach (Transform child in historyPanel.transform)
+            questionText.text = clip.EndQuestion;
+            foreach (Transform child in historyViewport)
             {
                 Destroy(child.gameObject);
             }
             foreach (var replic in clip.Replics)
             {
-                var replicEntry = Instantiate(historyEntryPrefab, historyPanel.transform);
+                var replicEntry = Instantiate(historyEntryPrefab, historyViewport);
                 replicEntry.PlaceReplic(replic);
             }
             foreach (Transform child in responsePanel.transform)
@@ -61,6 +65,16 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
                 }
                 yield return null; // Wait for the next frame
             }
+        }
+
+        public void OnHistoryOpen()
+        {
+            historyPanel.SetActive(true);
+        }
+
+        public void OnHistoryClose()
+        {
+            historyPanel.SetActive(false);
         }
     }
 }

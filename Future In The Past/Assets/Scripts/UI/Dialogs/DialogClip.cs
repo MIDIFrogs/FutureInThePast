@@ -10,9 +10,12 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
     {
         [SerializeField] private List<Replic> replics;
         [SerializeField] private List<Response> responses;
+        [SerializeField] private string endQuestion;
 
         public IReadOnlyList<Replic> Replics => replics;
 
         public IReadOnlyList<Response> Responses => responses;
+
+        public string EndQuestion => endQuestion;
     }
 }
