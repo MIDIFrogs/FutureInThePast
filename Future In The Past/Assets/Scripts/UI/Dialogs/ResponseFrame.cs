@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using FutureInThePast.Quests;
 using GluonGui.Dialog;
 using TMPro;
@@ -19,11 +20,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [SerializeField] private GameObject responsePanel;
         [SerializeField] private TMP_Text questionText;
 
-        private int selectedButton = -1;
-
-        public Response Response { get; private set; }
-
-        public IEnumerator WaitForResponse(DialogClip clip, QuestManager quests)
+        public async Task<Response> WaitForResponse(DialogClip clip)
         {
             questionText.text = clip.EndQuestion;
             foreach (Transform child in historyViewport)
@@ -39,32 +36,16 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
             {
                 Destroy(child.gameObject);
             }
-            List<Coroutine> buttonCoroutines = new();
+            List<Task> buttonTasks = new();
             foreach (var response in clip.Responses)
             {
                 var button = Instantiate(responsePrefab, responsePanel.transform);
-                buttonCoroutines.Add(StartCoroutine(button.WaitForClick(response, quests)));
+                buttonTasks.Add(button.WaitForClick(response));
             }
-            yield return WaitForCoroutines(buttonCoroutines);
-            Response = clip.Responses.ElementAtOrDefault(selectedButton);
-        }
-
-        private IEnumerator WaitForCoroutines(List<Coroutine> coroutines)
-        {
-            while (coroutines.Count > 0)
-            {
-                // Check if any coroutine is still running
-                for (int i = coroutines.Count - 1; i >= 0; i--)
-                {
-                    // If the coroutine is done, remove it from the list
-                    if (coroutines[i] == null)
-                    {
-                        selectedButton = i;
-                        break;
-                    }
-                }
-                yield return null; // Wait for the next frame
-            }
+            var clicked = await Task.WhenAny(buttonTasks);
+            int selectedButton = buttonTasks.IndexOf(clicked);
+            Debug.Log($"Selected button index: {selectedButton}");
+            return clip.Responses.ElementAtOrDefault(selectedButton);
         }
 
         public void OnHistoryOpen()

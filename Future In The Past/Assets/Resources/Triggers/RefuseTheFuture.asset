@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: RefuseTheFuture
   m_EditorClassIdentifier: 
   trigger:
-    tag: 
-    description: 
+    tag: RefuseTheFuture
+    description: Refuse your future
