@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CoolMushroom_0: -8035558103305189481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

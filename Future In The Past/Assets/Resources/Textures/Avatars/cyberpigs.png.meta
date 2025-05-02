@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cyberpigs_0: 1772820490849572719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

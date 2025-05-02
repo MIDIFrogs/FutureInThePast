@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 402b9f2fd477ab2459bea5b1fcea8b50
+guid: 3a0b76bded73bff4e885a8078b7b341b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7563527049551548106
-    second: kolobok_0
+      213: 3750596523902685195
+    second: "\u041A\u0430\u043C\u0435\u043D\u043D\u044B\u0439 \u0441\u0442\u043E\u043B\u0431_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kolobok_0
+      name: "\u041A\u0430\u043C\u0435\u043D\u043D\u044B\u0439 \u0441\u0442\u043E\u043B\u0431_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 512
-        height: 512
+        width: 76
+        height: 911
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ace049d37cb07f860800000000000000
-      internalID: 7563527049551548106
+      spriteID: b00d80fbaabcc0430800000000000000
+      internalID: 3750596523902685195
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      kolobok_0: 7563527049551548106
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
