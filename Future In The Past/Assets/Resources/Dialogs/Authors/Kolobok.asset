@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8682ad4798870e2458891849c874b551, type: 3}
+  m_Name: Kolobok
+  m_EditorClassIdentifier: 
+  id: 1
+  authorName: "\u041A\u043E\u043B\u043E\u0431\u043E\u043A"
+  signColor: {r: 0.7924528, g: 0.48842514, b: 0.0710217, a: 1}
+  avatar: {fileID: 7563527049551548106, guid: 402b9f2fd477ab2459bea5b1fcea8b50, type: 3}

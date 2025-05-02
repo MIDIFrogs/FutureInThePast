@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using FutureInThePast.Quests;
+using UnityEngine;
+
+namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
+{
+    [Serializable]
+    public class Response
+    {
+        [SerializeField] private string text;
+        [SerializeField] private List<TriggerConfig> requirements;
+        [SerializeField] private TriggerConfig selectionTrigger;
+        [SerializeField] private DialogClip continuation;
+
+        public string Text => text;
+
+        public IEnumerable<QuestTrigger> Requirements => requirements.Select(x => x.Trigger);
+
+        public QuestTrigger SelectionTrigger => selectionTrigger.Trigger;
+
+        public DialogClip Continuation => continuation;
+    }
+}
