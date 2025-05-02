@@ -5,7 +5,9 @@ public class ScreenManager : MonoBehaviour
 {
     public GameObject screen1; 
     public GameObject screen2; 
-    public float transitionTime = 1.0f; 
+    public float transitionTime = 1.0f;
+
+    private bool suppressSwitch;
 
     private void Start()
     {
@@ -15,7 +17,7 @@ public class ScreenManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && !suppressSwitch)
         {
             StartCoroutine(SwitchScreens());
         }
@@ -23,6 +25,7 @@ public class ScreenManager : MonoBehaviour
 
     private IEnumerator SwitchScreens()
     {
+        suppressSwitch = true;
         GameObject currentScreen = screen1.activeSelf ? screen1 : screen2;
         GameObject nextScreen = currentScreen == screen1 ? screen2 : screen1;
 
@@ -50,6 +53,7 @@ public class ScreenManager : MonoBehaviour
         }
 
         SetAlpha(nextScreen, 1);
+        suppressSwitch = false;
     }
 
     private void SetAlpha(GameObject obj, float alpha)
