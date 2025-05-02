@@ -1,16 +1,16 @@
+
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
-using System.Collections;
 
 namespace MIDIFrogs.FutureInThePast.DialogSystem
 {
     public class DialogFrame : MonoBehaviour
     {
-        [SerializeField] private TMP_Text replicaText;
+        [SerializeField] private TMP_Text replicText;
         [SerializeField] private TMP_Text authorName;
         [SerializeField] private Image authorAvatar;
         [SerializeField] private AudioSource voiceOver;
@@ -30,26 +30,29 @@ namespace MIDIFrogs.FutureInThePast.DialogSystem
         /// <param name="text">Text to write.</param>
         /// <param name="textSpeed">Text speed to speed up or slow down the reading.</param>
         /// <param name="token">Token to cancel an animation.</param>
-        public IEnumerator AnimateReplica(string text, float textSpeed)
+        public async Task AnimationReplic(string text, float textSpeed, CancellationToken token)
         {
             for (int i = 0; i <= text.Length; i++)
             {
-                replicaText.text = text[..i];
-                yield return new WaitForSeconds(40f / textSpeed / 1000f); // Convert milliseconds to seconds
+                token.ThrowIfCancellationRequested();
+                replicText.text = text[..i];
+                await Task.Delay(TimeSpan.FromMilliseconds(40) / textSpeed);
             }
-
+            
             // Assuming each 100 characters in text should be read in 1.5 seconds.
             float textReadCoefficient = text.Length / 100f;
-            yield return new WaitForSeconds(1.5f * textReadCoefficient);
+            // For autoplay to read after text
+            await Task.Delay(TimeSpan.FromSeconds(1.5) * textReadCoefficient);
         }
 
-        public IEnumerator AnimateImage(Image image, float fromAlpha, float toAlpha, float speed)
+        public async Task AnimateImage(Image image, float fromAlpha, float toAlpha, float speed, CancellationToken token)
         {
             for (int i = 0; i < 100; i++)
             {
+                token.ThrowIfCancellationRequested();
                 float alpha = Mathf.Lerp(fromAlpha, toAlpha, i / 100f);
-                image.color = new Color(1, 1, 1, alpha);
-                yield return new WaitForSeconds(3f / speed / 1000f); // Convert milliseconds to seconds
+                image.color = new(1, 1, 1, alpha);
+                await Task.Delay(TimeSpan.FromMilliseconds(3) / speed);
             }
         }
 
@@ -71,12 +74,12 @@ namespace MIDIFrogs.FutureInThePast.DialogSystem
                 voiceOver.clip = replic.Voice;
                 voiceOver.Play();
             }
-            replicaText.fontStyle = replic.FontStyle;
-            Coroutine animation = StartCoroutine(AnimateReplica(replic.Message, textSpeed));
+            replicText.fontStyle = replic.FontStyle;
+            var animation = AnimationReplic(replic.Message, textSpeed, cancelPreTask.Token);
             authorName.text = replic.Author.Name;
             authorAvatar.sprite = replic.Author.Avatar;
             authorName.color = replic.Author.SignColor;
-            Coroutine fadeOut = null, fadeIn = null;
+            Task fadeOut = Task.CompletedTask, fadeIn = Task.CompletedTask;
             // Animate splash screens
             oldSplash.sprite = splash.sprite;
             splash.sprite = replic.FrameSplash;
@@ -84,7 +87,7 @@ namespace MIDIFrogs.FutureInThePast.DialogSystem
             if (splash.sprite != null)
             {
                 splash.color = new Color(1, 1, 1, 0);
-                fadeIn = StartCoroutine(AnimateImage(splash, 0, 1, textSpeed));
+                fadeIn = AnimateImage(splash, 0, 1, textSpeed, cancelPreTask.Token);
                 if (oldSplash.sprite != null)
                 {
                     oldSplash.color = Color.white;
@@ -96,7 +99,7 @@ namespace MIDIFrogs.FutureInThePast.DialogSystem
                 if (oldSplash.sprite != null)
                 {
                     oldSplash.color = Color.white;
-                    fadeOut = StartCoroutine(AnimateImage(oldSplash, 1, 0, textSpeed));
+                    fadeOut = AnimateImage(oldSplash, 1, 0, textSpeed, cancelPreTask.Token);
                 }
                 else
                 {
@@ -111,9 +114,6 @@ namespace MIDIFrogs.FutureInThePast.DialogSystem
 
             if (autoplay)
             {
-                yield return animation;
-                yield return fadeIn;
-                yield return fadeOut;
                 await Task.WhenAny(Task.WhenAll(animation, fadeIn, fadeOut), waitButton.Task);
             }
             else
