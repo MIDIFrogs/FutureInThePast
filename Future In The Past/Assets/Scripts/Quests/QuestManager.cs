@@ -24,10 +24,8 @@ namespace FutureInThePast.Quests
 
         public void SetTrigger(QuestTrigger trigger)
         {
-            Debug.Log($"Triggers status: {string.Join(',', triggers.Values.Select(x => x.Tag + ':' + x.IsCompleted))}");
             Debug.Log($"Trigger {trigger.Tag} is set.");
             trigger.IsCompleted = true;
-            Debug.Log($"Triggers status: {string.Join(',', triggers.Values.Select(x => x.Tag + ':' + x.IsCompleted))}");
         }
 
         public bool IsTrigger(QuestTrigger trigger)
