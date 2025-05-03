@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace FutureInThePast.Quests
 {
-    public class QuestManager : MonoBehaviour
+    public static class QuestManager
     {
-        [SerializeField] private Dictionary<string, QuestTrigger> triggers;
+        private static Dictionary<string, QuestTrigger> triggers;
 
-        private void Start()
+        public static void Initialize()
         {
             triggers = Resources.LoadAll<TriggerConfig>("Triggers").ToDictionary(x => x.Trigger.Tag, y => y.Trigger);
             // I don't know if it's actually needed.
@@ -16,24 +16,38 @@ namespace FutureInThePast.Quests
                 trigger.IsCompleted = false;
         }
 
-        public void SetTrigger(string triggerName)
+        public static QuestTrigger GetTrigger(string name) => triggers[name];
+
+        public static void ResetTrigger(string triggerName)
+        {
+            Debug.Log($"Trigger {triggerName} is unset.");
+            triggers[triggerName].IsCompleted = false;
+        }
+
+        public static void ResetTrigger(QuestTrigger trigger)
+        {
+            Debug.Log($"Trigger {trigger.Tag} is set.");
+            trigger.IsCompleted = false;
+        }
+
+        public static void SetTrigger(string triggerName)
         {
             Debug.Log($"Trigger {triggerName} is set.");
             triggers[triggerName].IsCompleted = true;
         }
 
-        public void SetTrigger(QuestTrigger trigger)
+        public static void SetTrigger(QuestTrigger trigger)
         {
             Debug.Log($"Trigger {trigger.Tag} is set.");
             trigger.IsCompleted = true;
         }
 
-        public bool IsTrigger(QuestTrigger trigger)
+        public static bool IsTrigger(QuestTrigger trigger)
         {
             return trigger.IsCompleted;
         }
         
-        public bool IsTrigger(string triggerName)
+        public static bool IsTrigger(string triggerName)
         {
             return triggers[triggerName].IsCompleted;
         }

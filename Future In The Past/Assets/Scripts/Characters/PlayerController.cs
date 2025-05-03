@@ -33,8 +33,7 @@ namespace FutureInThePast.Characters
         private void HandleMovement()
         {
             float moveInput = Input.GetAxis("Horizontal");
-            Vector2 movement = new(moveInput * moveSpeed, rb.linearVelocityY);
-            rb.linearVelocity = movement;
+            rb.linearVelocityX = moveInput * moveSpeed;
 
             // Flip the character sprite based on movement direction
             if (moveInput < 0)
