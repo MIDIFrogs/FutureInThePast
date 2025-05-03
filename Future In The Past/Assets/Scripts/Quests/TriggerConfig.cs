@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace FutureInThePast.Quests
+namespace MIDIFrogs.FutureInThePast.Quests
 {
     [CreateAssetMenu(fileName = "New quest trigger", menuName = "Quests/Trigger")]
     public class TriggerConfig : ScriptableObject

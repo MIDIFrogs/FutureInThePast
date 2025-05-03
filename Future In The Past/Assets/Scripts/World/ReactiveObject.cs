@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using FutureInThePast.Quests;
+using MIDIFrogs.FutureInThePast.Quests;
 using UnityEngine;
 using UnityEngine.Events;
 

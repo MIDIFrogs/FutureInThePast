@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using FutureInThePast.Quests;
+using MIDIFrogs.FutureInThePast.Quests;
 using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast.UI.DialogSystem

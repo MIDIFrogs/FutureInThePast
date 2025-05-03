@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Linq;
 using System.Threading.Tasks;
-using FutureInThePast.Quests;
+using MIDIFrogs.FutureInThePast.Quests;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

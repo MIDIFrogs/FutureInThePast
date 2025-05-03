@@ -1,4 +1,4 @@
-using FutureInThePast.Quests;
+using MIDIFrogs.FutureInThePast.Quests;
 using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast

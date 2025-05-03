@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Threading.Tasks;
-using FutureInThePast.Quests;
+using MIDIFrogs.FutureInThePast.Quests;
 using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast.UI.DialogSystem

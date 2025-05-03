@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace FutureInThePast.Quests
+namespace MIDIFrogs.FutureInThePast.Quests
 {
     [Serializable]
     public class QuestTrigger
