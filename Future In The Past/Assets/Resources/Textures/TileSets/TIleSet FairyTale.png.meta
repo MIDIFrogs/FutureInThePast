@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: -5854319272755289967
     second: TIleSet FairyTale_3
+  - first:
+      213: 1901773721591889200
+    second: TIleSet FairyTale_4
+  - first:
+      213: -7802546943268946076
+    second: TIleSet FairyTale_5
+  - first:
+      213: 2428127368398579753
+    second: TIleSet FairyTale_6
+  - first:
+      213: -6888565106098921044
+    second: TIleSet FairyTale_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +58,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -84,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -178,8 +190,8 @@ TextureImporter:
       name: TIleSet FairyTale_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 960
+        x: 480
+        y: 1056
         width: 96
         height: 96
       alignment: 0
@@ -200,8 +212,8 @@ TextureImporter:
       name: TIleSet FairyTale_4
       rect:
         serializedVersion: 2
-        x: 192
-        y: 960
+        x: 576
+        y: 1056
         width: 96
         height: 96
       alignment: 0
@@ -210,10 +222,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 23591913ab3960b47b511b73f4a6208b
-      internalID: -699184940
+      spriteID: 03d38aeaf15746a10800000000000000
+      internalID: 1901773721591889200
       vertices: []
       indices: 
       edges: []
@@ -222,8 +234,8 @@ TextureImporter:
       name: TIleSet FairyTale_5
       rect:
         serializedVersion: 2
-        x: 288
-        y: 960
+        x: 672
+        y: 1056
         width: 96
         height: 96
       alignment: 0
@@ -232,10 +244,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8c57c15cc9a37bb4aab7068ef41e9b20
-      internalID: 112700025
+      spriteID: 46ff42f05e8c7b390800000000000000
+      internalID: -7802546943268946076
       vertices: []
       indices: 
       edges: []
@@ -254,10 +266,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 688e80bcca4a08f439508efa60d13200
-      internalID: 1224199379
+      spriteID: 9282dce0af072b120800000000000000
+      internalID: 2428127368398579753
       vertices: []
       indices: 
       edges: []
@@ -276,10 +288,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 623188d51da8dba41a303d0d551ae853
-      internalID: 1624146879
+      spriteID: ca1a2de7886e660a0800000000000000
+      internalID: -6888565106098921044
       vertices: []
       indices: 
       edges: []
@@ -300,14 +312,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe9ff4b5cbeda494b83ab9270323c509
-      internalID: -414332024
+      spriteID: c22b1ab0ce11b594bb804fb78bfe920c
+      internalID: -411806697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: TIleSet FairyTale_9
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 864
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7275f1a7468fb0409ec61c004858a53
+      internalID: -372039458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_10
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 864
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d6caa0ea39ca647bdb5d64d9964580
+      internalID: -1945064858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_11
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 864
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42fb7ac716b36546b87bfb8f199b270
+      internalID: -1135788102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_12
       rect:
         serializedVersion: 2
         x: 96
@@ -322,14 +400,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71c19d30cdf27754e96d31beed34c3e6
-      internalID: -458648241
+      spriteID: 8bb00c6dcf2c30a4c960f277256874a2
+      internalID: 1467655802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_10
+      name: TIleSet FairyTale_13
       rect:
         serializedVersion: 2
         x: 192
@@ -344,14 +422,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96c85b887a1c4cd4c8aa49f62066e3ee
-      internalID: -724629620
+      spriteID: 8f4d75529a495344d88efc6a0a4ca50d
+      internalID: 111280144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_11
+      name: TIleSet FairyTale_14
       rect:
         serializedVersion: 2
         x: 288
@@ -366,14 +444,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b96f6aff557232841ada72e5a613ce4e
-      internalID: -758334931
+      spriteID: e021829226a79bf40b7a913367567f34
+      internalID: -1504220014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_12
+      name: TIleSet FairyTale_15
       rect:
         serializedVersion: 2
         x: 480
@@ -388,74 +466,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d371824794679148aa830bd9096a36b
-      internalID: -577496095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TIleSet FairyTale_13
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 576
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bf18d3dbb49fdc448b77354fcc3df58
-      internalID: 822014696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TIleSet FairyTale_14
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 576
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b91956742c2af674eb01aa57101f7ff2
-      internalID: -1610517606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TIleSet FairyTale_15
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 576
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ef4a4e06d2ef554faa2e358ab1fc0cd
-      internalID: -1601472214
+      spriteID: 5778842978431df48a3748226e3fb8ce
+      internalID: -1430653384
       vertices: []
       indices: 
       edges: []
@@ -464,8 +476,8 @@ TextureImporter:
       name: TIleSet FairyTale_16
       rect:
         serializedVersion: 2
-        x: 96
-        y: 480
+        x: 576
+        y: 768
         width: 96
         height: 96
       alignment: 0
@@ -476,8 +488,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67a09eeb00bacfc4f902efe45587f9bb
-      internalID: 321102832
+      spriteID: 56fbbb02cc4d9bf428d774805e4f65ff
+      internalID: -2142159766
       vertices: []
       indices: 
       edges: []
@@ -486,8 +498,8 @@ TextureImporter:
       name: TIleSet FairyTale_17
       rect:
         serializedVersion: 2
-        x: 192
-        y: 480
+        x: 672
+        y: 768
         width: 96
         height: 96
       alignment: 0
@@ -498,8 +510,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34b7b307a86295a4d9907ff2a80d958a
-      internalID: 948753678
+      spriteID: 342e220982d46994b88e4a002bc13606
+      internalID: -1558085798
       vertices: []
       indices: 
       edges: []
@@ -508,8 +520,8 @@ TextureImporter:
       name: TIleSet FairyTale_18
       rect:
         serializedVersion: 2
-        x: 288
-        y: 480
+        x: 96
+        y: 672
         width: 96
         height: 96
       alignment: 0
@@ -520,8 +532,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3146be259c78aff45a8ecd701e3c1908
-      internalID: -845814970
+      spriteID: 9a8a464dd42aae04fbc8a19b6d8e1262
+      internalID: 131871821
       vertices: []
       indices: 
       edges: []
@@ -530,8 +542,8 @@ TextureImporter:
       name: TIleSet FairyTale_19
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
+        x: 288
+        y: 672
         width: 96
         height: 96
       alignment: 0
@@ -542,8 +554,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed399e2d397d1d849b690d0931de0256
-      internalID: 706873051
+      spriteID: b697d6137c763574994cf2027694fa2a
+      internalID: -1907290438
       vertices: []
       indices: 
       edges: []
@@ -553,7 +565,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 384
+        y: 576
         width: 96
         height: 96
       alignment: 0
@@ -564,8 +576,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4de0e0310737bbf4d86b5305d08fbb1d
-      internalID: -522912744
+      spriteID: e7a86d2e2fa20414fbaa1365074591d2
+      internalID: -906346225
       vertices: []
       indices: 
       edges: []
@@ -575,7 +587,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 384
+        y: 576
         width: 96
         height: 96
       alignment: 0
@@ -586,8 +598,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fb4724aa4b025b429122f54b1bd10f6
-      internalID: 1157560082
+      spriteID: a9cdac377889d9e418b02e755df3063b
+      internalID: 228042181
       vertices: []
       indices: 
       edges: []
@@ -597,6 +609,204 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060aae0b98f97d6489b597ba7345cc3c
+      internalID: 1298967902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_23
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22b7b51f20beff4fa68ca28cee2ebda
+      internalID: -256855967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_24
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd950232ca639e46a8e0171214e629f
+      internalID: 602719851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_25
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8561926b727c98c45818f2f0c6a68de8
+      internalID: -2081738062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_26
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 576
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f2d325d0e405f4d903c66f0f71ff19
+      internalID: -2076685652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_27
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adbf05a3b984bb049aabd46b9193da57
+      internalID: 31548725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53dba48c57aa5a47a930849acbdb78d
+      internalID: 1890778462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_29
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf455dd179643c4488ec40d0a1bf10a
+      internalID: -1703886047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_30
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 480
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079b886131e8c064fa4ec45d05e9439f
+      internalID: -531619048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_31
+      rect:
+        serializedVersion: 2
+        x: 96
         y: 384
         width: 96
         height: 96
@@ -608,14 +818,146 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb813a83d76377549adbf946f26446fd
-      internalID: 911327275
+      spriteID: a86c457469e0f434a94fbb836870fbdb
+      internalID: -1470610944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_23
+      name: TIleSet FairyTale_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9cd266fec92144cb68058c7c893f49
+      internalID: 1821119322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_33
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac808a0e5bd3ca488840d3de45c38c6
+      internalID: -21885029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_34
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a021eff95e3267c4fbec52b49cf0d7c6
+      internalID: 371324669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_35
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7e9b8bc2c272f4a929df13319dff82
+      internalID: -1171970198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_36
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef3ced07f568f74cb30446a6eac6dc6
+      internalID: -875688401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_37
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb4cfcc3c63c3c418c0ccef3c0f7f89
+      internalID: 888506415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_38
       rect:
         serializedVersion: 2
         x: 96
@@ -630,14 +972,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7746bded47b33df48b6b4a27c7fde75f
-      internalID: -1861155405
+      spriteID: 9f8658c6485a2c94f91207817814c48e
+      internalID: 172795661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_24
+      name: TIleSet FairyTale_39
       rect:
         serializedVersion: 2
         x: 192
@@ -652,14 +994,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b8cd00e4be13fc428b6f773faa42d34
-      internalID: -1563787292
+      spriteID: df1b69296383d554b9be6d30209dc1ee
+      internalID: 1573792346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_25
+      name: TIleSet FairyTale_40
       rect:
         serializedVersion: 2
         x: 288
@@ -674,14 +1016,58 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cac04a0503beadf4bbd7bce9ac38c28d
-      internalID: -539478479
+      spriteID: 506cc1f02e70b2848b426a933b22445b
+      internalID: 653368768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_26
+      name: TIleSet FairyTale_41
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f785a7e933d5b847a8534bf093f67f2
+      internalID: 1369583766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_42
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 288
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc45894686a8b448af6954e8659f731
+      internalID: -933152539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_43
       rect:
         serializedVersion: 2
         x: 96
@@ -696,14 +1082,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5baee19ededa9dd438c326fa9f6ce6c6
-      internalID: 2006617882
+      spriteID: 173daee2a228c54488079af262daf74c
+      internalID: -349111199
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_27
+      name: TIleSet FairyTale_44
       rect:
         serializedVersion: 2
         x: 192
@@ -718,14 +1104,102 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8499f1cdad7c944da4bd5d8d0a66629
-      internalID: -1657480633
+      spriteID: a7d8b73826d642b46becc29987d50ed1
+      internalID: 1932222230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_28
+      name: TIleSet FairyTale_45
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0561f98f30a1774780ab20868625f46
+      internalID: 1596101705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea368144e5fbbfd429369eaa5bfde530
+      internalID: 1627580551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_47
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b302d4831fc1d4b9ac03842bde046a
+      internalID: -247780596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_48
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fe38a98ce410f478a784844c2e0148
+      internalID: 871609981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TIleSet FairyTale_49
       rect:
         serializedVersion: 2
         x: 96
@@ -740,14 +1214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1151e4ea113c75949ba285b9607ff70d
-      internalID: -1932054361
+      spriteID: 3880df097a18cb34abf1e8c17d1d1c6f
+      internalID: 755535141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_29
+      name: TIleSet FairyTale_50
       rect:
         serializedVersion: 2
         x: 192
@@ -762,14 +1236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab63cc55cc37fa543927c570de3be447
-      internalID: 1916270812
+      spriteID: bd314a01cbb9e6d43acae22848e59454
+      internalID: -2144859632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_30
+      name: TIleSet FairyTale_51
       rect:
         serializedVersion: 2
         x: 288
@@ -784,14 +1258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f98b32b46fbd7b4ab7c916f31d7e957
-      internalID: -114293523
+      spriteID: 95e24e642be1fa149b22acd8b41fbaa0
+      internalID: 1153173121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_31
+      name: TIleSet FairyTale_52
       rect:
         serializedVersion: 2
         x: 384
@@ -806,14 +1280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac78a8a9a111ee34f835c366e6ec3af9
-      internalID: 1965006693
+      spriteID: 52b9c1f6535426448af5612064cd1544
+      internalID: 886726074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_32
+      name: TIleSet FairyTale_53
       rect:
         serializedVersion: 2
         x: 480
@@ -828,18 +1302,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc7a3f3efd6a3434b947142bde09d9c5
-      internalID: 172704294
+      spriteID: 23b7d800e1de13b41a888131cdec6f5f
+      internalID: 273352125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_33
+      name: TIleSet FairyTale_54
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
+        x: 576
+        y: 96
         width: 96
         height: 96
       alignment: 0
@@ -850,18 +1324,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c48889e20a754464a9672421dcbf7a4f
-      internalID: -867625965
+      spriteID: 8e0e285cea2b5d2498a5780ff3b0363a
+      internalID: -2762556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TIleSet FairyTale_34
+      name: TIleSet FairyTale_55
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
+        x: 672
+        y: 96
         width: 96
         height: 96
       alignment: 0
@@ -872,8 +1346,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de135585ca1eb6f4f8df6ccd1403cb0c
-      internalID: 2003219543
+      spriteID: 964c177997204384b8d565a0fe3dd842
+      internalID: -1846714460
       vertices: []
       indices: 
       edges: []
@@ -882,7 +1356,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 6c9b0660825e40242b765b400f22fd05
+    spriteID: ee535aaff115dab49a8620b25dd9d263
     internalID: 0
     vertices: []
     indices: 
@@ -894,39 +1368,60 @@ TextureImporter:
     nameFileIdTable:
       TIleSet FairyTale_0: 7141589043102886889
       TIleSet FairyTale_1: -5641185118750974390
-      TIleSet FairyTale_10: -724629620
-      TIleSet FairyTale_11: -758334931
-      TIleSet FairyTale_12: -577496095
-      TIleSet FairyTale_13: 822014696
-      TIleSet FairyTale_14: -1610517606
-      TIleSet FairyTale_15: -1601472214
-      TIleSet FairyTale_16: 321102832
-      TIleSet FairyTale_17: 948753678
-      TIleSet FairyTale_18: -845814970
-      TIleSet FairyTale_19: 706873051
+      TIleSet FairyTale_10: -1945064858
+      TIleSet FairyTale_11: -1135788102
+      TIleSet FairyTale_12: 1467655802
+      TIleSet FairyTale_13: 111280144
+      TIleSet FairyTale_14: -1504220014
+      TIleSet FairyTale_15: -1430653384
+      TIleSet FairyTale_16: -2142159766
+      TIleSet FairyTale_17: -1558085798
+      TIleSet FairyTale_18: 131871821
+      TIleSet FairyTale_19: -1907290438
       TIleSet FairyTale_2: -9062744269359364193
-      TIleSet FairyTale_20: -522912744
-      TIleSet FairyTale_21: 1157560082
-      TIleSet FairyTale_22: 911327275
-      TIleSet FairyTale_23: -1861155405
-      TIleSet FairyTale_24: -1563787292
-      TIleSet FairyTale_25: -539478479
-      TIleSet FairyTale_26: 2006617882
-      TIleSet FairyTale_27: -1657480633
-      TIleSet FairyTale_28: -1932054361
-      TIleSet FairyTale_29: 1916270812
+      TIleSet FairyTale_20: -906346225
+      TIleSet FairyTale_21: 228042181
+      TIleSet FairyTale_22: 1298967902
+      TIleSet FairyTale_23: -256855967
+      TIleSet FairyTale_24: 602719851
+      TIleSet FairyTale_25: -2081738062
+      TIleSet FairyTale_26: -2076685652
+      TIleSet FairyTale_27: 31548725
+      TIleSet FairyTale_28: 1890778462
+      TIleSet FairyTale_29: -1703886047
       TIleSet FairyTale_3: -5854319272755289967
-      TIleSet FairyTale_30: -114293523
-      TIleSet FairyTale_31: 1965006693
-      TIleSet FairyTale_32: 172704294
-      TIleSet FairyTale_33: -867625965
-      TIleSet FairyTale_34: 2003219543
-      TIleSet FairyTale_4: -699184940
-      TIleSet FairyTale_5: 112700025
-      TIleSet FairyTale_6: 1224199379
-      TIleSet FairyTale_7: 1624146879
-      TIleSet FairyTale_8: -414332024
-      TIleSet FairyTale_9: -458648241
+      TIleSet FairyTale_30: -531619048
+      TIleSet FairyTale_31: -1470610944
+      TIleSet FairyTale_32: 1821119322
+      TIleSet FairyTale_33: -21885029
+      TIleSet FairyTale_34: 371324669
+      TIleSet FairyTale_35: -1171970198
+      TIleSet FairyTale_36: -875688401
+      TIleSet FairyTale_37: 888506415
+      TIleSet FairyTale_38: 172795661
+      TIleSet FairyTale_39: 1573792346
+      TIleSet FairyTale_4: 1901773721591889200
+      TIleSet FairyTale_40: 653368768
+      TIleSet FairyTale_41: 1369583766
+      TIleSet FairyTale_42: -933152539
+      TIleSet FairyTale_43: -349111199
+      TIleSet FairyTale_44: 1932222230
+      TIleSet FairyTale_45: 1596101705
+      TIleSet FairyTale_46: 1627580551
+      TIleSet FairyTale_47: -247780596
+      TIleSet FairyTale_48: 871609981
+      TIleSet FairyTale_49: 755535141
+      TIleSet FairyTale_5: -7802546943268946076
+      TIleSet FairyTale_50: -2144859632
+      TIleSet FairyTale_51: 1153173121
+      TIleSet FairyTale_52: 886726074
+      TIleSet FairyTale_53: 273352125
+      TIleSet FairyTale_54: -2762556
+      TIleSet FairyTale_55: -1846714460
+      TIleSet FairyTale_6: 2428127368398579753
+      TIleSet FairyTale_7: -6888565106098921044
+      TIleSet FairyTale_8: -411806697
+      TIleSet FairyTale_9: -372039458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
