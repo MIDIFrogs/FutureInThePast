@@ -1,27 +1,39 @@
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 namespace FutureInThePast.Characters
 {
-    using UnityEngine;
-
     public class PlayerController : MonoBehaviour
     {
+        [Header("Physical")]
         [SerializeField] private float moveSpeed = 5f;
         [SerializeField] private float jumpHeight = 7f;
 
+        [Header("Constraints")]
+        [SerializeField][Range(0, 1f)] private float moveConstraint = 0.1f;
+
         private bool canJump;
-        //private bool canDoubleJump;
         private bool isDead = false;
 
         private Rigidbody2D rb;
+
+        // Store input values
+        private float moveInput;
+        private bool jumpInput;
 
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
         }
 
-        private void Update()
+        private void LateUpdate()
+        {
+            if (!isDead)
+            {
+                HandleInput();
+            }
+        }
+
+        private void FixedUpdate()
         {
             if (!isDead)
             {
@@ -30,10 +42,24 @@ namespace FutureInThePast.Characters
             }
         }
 
+        private void HandleInput()
+        {
+            // Capture movement input
+            moveInput = Input.GetAxis("Horizontal");
+
+            // Capture jump input
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                jumpInput = true;
+            }
+        }
+
         private void HandleMovement()
         {
-            float moveInput = Input.GetAxis("Horizontal");
-            rb.linearVelocityX = moveInput * moveSpeed;
+            if (Mathf.Abs(moveInput) > moveConstraint)
+            {
+                rb.linearVelocityX = moveInput * moveSpeed;
+            }
 
             // Flip the character sprite based on movement direction
             if (moveInput < 0)
@@ -48,19 +74,14 @@ namespace FutureInThePast.Characters
 
         private void HandleJump()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (jumpInput && canJump)
             {
-                if (canJump)
-                {
-                    Jump();
-                    canJump = false; // Disable further jumps until grounded
-                }
-                //else if (canDoubleJump)
-                //{
-                //    Jump();
-                //    canDoubleJump = false; // Disable double jump
-                //}
+                Jump();
+                canJump = false; // Disable further jumps until grounded
             }
+
+            // Reset jump input after processing
+            jumpInput = false;
         }
 
         private void Jump()
@@ -74,7 +95,6 @@ namespace FutureInThePast.Characters
             if (collision.gameObject.CompareTag("Ground"))
             {
                 canJump = true; // Allow jump
-                //canDoubleJump = true; // Allow double jump
             }
         }
 
@@ -89,5 +109,4 @@ namespace FutureInThePast.Characters
             return isDead;
         }
     }
-
 }

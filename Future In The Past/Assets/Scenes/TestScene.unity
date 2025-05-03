@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpHeight: 8
+  moveConstraint: 0.1
 --- !u!50 &20894486
 Rigidbody2D:
   serializedVersion: 5
@@ -192,7 +193,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -724,6 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpHeight: 14
+  moveConstraint: 0.1
 --- !u!50 &457553448
 Rigidbody2D:
   serializedVersion: 5
@@ -747,7 +749,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
@@ -1619,10 +1621,10 @@ MonoBehaviour:
   Targets:
   - Object: {fileID: 457553451}
     Weight: 1
-    Radius: 1
+    Radius: 0.5
   - Object: {fileID: 20894484}
     Weight: 1
-    Radius: 1
+    Radius: 0.5
   m_LegacyTargets: []
 --- !u!4 &815956123
 Transform:
@@ -1828,7 +1830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Width: 2
   Damping: 1
-  FovRange: {x: 3, y: 60}
+  FovRange: {x: 1, y: 58}
 --- !u!114 &1038301405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1847,18 +1849,18 @@ MonoBehaviour:
     ScreenPosition: {x: 0, y: 0}
     DeadZone:
       Enabled: 1
-      Size: {x: 0.2, y: 0.2}
+      Size: {x: 0.2989583, y: 0.3}
     HardLimits:
       Enabled: 1
-      Size: {x: 0.8, y: 0.8}
+      Size: {x: 0.75, y: 0.75}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
   TargetOffset: {x: 0, y: 0, z: 0}
   Damping: {x: 1, y: 1, z: 1}
   Lookahead:
-    Enabled: 0
-    Time: 0
-    Smoothing: 0
+    Enabled: 1
+    Time: 0.1
+    Smoothing: 3
     IgnoreY: 0
 --- !u!114 &1038301406
 MonoBehaviour:
@@ -1876,7 +1878,7 @@ MonoBehaviour:
     Enabled: 0
     m_Value: 0
   OutputChannel: 1
-  StandbyUpdate: 2
+  StandbyUpdate: 1
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
@@ -1912,7 +1914,7 @@ Transform:
   m_GameObject: {fileID: 1038301403}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9100003, y: -1.0099996, z: -10}
+  m_LocalPosition: {x: -4.91, y: -1.0100005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1931,9 +1933,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FramingMode: 2
-  FramingSize: 0.3
+  FramingSize: 0.15
   CenterOffset: {x: 0, y: 0}
-  Damping: 2
+  Damping: 3
   SizeAdjustment: 2
   LateralAdjustment: 0
   FovRange: {x: 1, y: 100}
