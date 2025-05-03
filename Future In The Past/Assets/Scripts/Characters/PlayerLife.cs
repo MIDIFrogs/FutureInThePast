@@ -16,6 +16,7 @@ namespace MIDIFrogs.FutureInThePast
 
         private void Start()
         {
+            Health = maxHp;
             lastCheckpoint = initialCheckpoint;
         }
 

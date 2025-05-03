@@ -14,8 +14,8 @@ namespace MIDIFrogs.FutureInThePast
         {
             foreach (var info in triggerCallbacks)
             {
-                info.TriggerConfig.Trigger.Completed += (s, e) => info.OnTriggerCompleted.Invoke();
-                info.TriggerConfig.Trigger.Restored += (s, e) => info.OnTriggerRestored.Invoke();
+                info.TriggerConfig.Quest.Completed += (s, e) => info.OnTriggerCompleted.Invoke();
+                info.TriggerConfig.Quest.Restored += (s, e) => info.OnTriggerRestored.Invoke();
             }
         }
     }

@@ -7,6 +7,6 @@ namespace MIDIFrogs.FutureInThePast.Quests
     {
         [SerializeField] private QuestTrigger trigger;
 
-        public QuestTrigger Trigger => trigger;
+        public QuestTrigger Quest => trigger;
     }
 }

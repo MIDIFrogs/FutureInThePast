@@ -279,6 +279,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 814b4415de1d3c04e993ee55845ab991, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &778994879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 778994880}
+  - component: {fileID: 778994881}
+  - component: {fileID: 778994882}
+  m_Layer: 0
+  m_Name: Ending Resolver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &778994880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778994879}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.608213, y: -4.3932076, z: 6.3895774}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &778994881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778994879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74f5f224537f3334cbcc4bcaea635480, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endings:
+  - Triggers:
+    - {fileID: 11400000, guid: 7385d2e9df4b4574690b71f8e09402d6, type: 2}
+    EndingDialog: {fileID: 11400000, guid: d272378b2280be04eb0e5849ab6bda3f, type: 2}
+  dialogPlayer: {fileID: 1833822408}
+  backNavigator: {fileID: 778994882}
+--- !u!114 &778994882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778994879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da6ada505e4b933499270f7cbbdd14d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToNavigate: {fileID: 11400000, guid: 3e02b9763f662fa4a98b6c0cb2654aca, type: 2}
 --- !u!1 &792292995
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,3 +858,4 @@ SceneRoots:
   - {fileID: 1167978842}
   - {fileID: 1833822407}
   - {fileID: 792292998}
+  - {fileID: 778994880}

@@ -16,8 +16,8 @@ namespace MIDIFrogs.FutureInThePast
 
         protected override void Start()
         {
-            trigger.Trigger.Completed += OnTriggerCompleted;
-            trigger.Trigger.Restored += OnTriggerRestored;
+            trigger.Quest.Completed += OnTriggerCompleted;
+            trigger.Quest.Restored += OnTriggerRestored;
             base.Start();
             Switch(disablePrefab);
         }

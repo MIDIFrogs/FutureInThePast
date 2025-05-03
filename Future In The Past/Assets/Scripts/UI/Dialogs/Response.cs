@@ -16,9 +16,9 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
 
         public string Text => text;
 
-        public IEnumerable<QuestTrigger> Requirements => requirements.Select(x => x.Trigger);
+        public IEnumerable<QuestTrigger> Requirements => requirements.Select(x => x.Quest);
 
-        public QuestTrigger SelectionTrigger => selectionTrigger.Trigger;
+        public QuestTrigger SelectionTrigger => selectionTrigger.Quest;
 
         public DialogClip Continuation => continuation;
     }

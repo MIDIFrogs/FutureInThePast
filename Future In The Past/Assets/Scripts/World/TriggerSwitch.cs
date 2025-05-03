@@ -11,13 +11,13 @@ namespace MIDIFrogs.FutureInThePast
 
         public override void OnInteract()
         {
-            if (!trigger.Trigger.IsCompleted)
+            if (!trigger.Quest.IsCompleted)
             {
-                QuestManager.SetTrigger(trigger.Trigger);
+                QuestManager.SetTrigger(trigger.Quest);
             }
             else if (twoWay)
             {
-                QuestManager.ResetTrigger(trigger.Trigger);
+                QuestManager.ResetTrigger(trigger.Quest);
             }
         }
     }
