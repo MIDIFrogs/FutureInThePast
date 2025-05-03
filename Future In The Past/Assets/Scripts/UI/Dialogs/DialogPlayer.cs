@@ -8,7 +8,6 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
     public class DialogPlayer : MonoBehaviour
     {
         [SerializeField] private PauseManager pauseMenu;
-        [SerializeField] private QuestManager quests;
 
         [Header("Dialog properties")]
         [SerializeField] private float textSpeed;
@@ -27,6 +26,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
 
         private void Start()
         {
+            QuestManager.Initialize();
             if (startupDialog != null)
             {
                 CurrentDialogTask = StartDialogAsync(startupDialog);
@@ -64,7 +64,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
                         responseFrame.gameObject.SetActive(true);
                         var response = await responseFrame.WaitForResponse(clip);
                         responseFrame.gameObject.SetActive(false);
-                        quests.SetTrigger(response.SelectionTrigger);
+                        QuestManager.SetTrigger(response.SelectionTrigger);
                         clip = response.Continuation;
                     }
                     else
