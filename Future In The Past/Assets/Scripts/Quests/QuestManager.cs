@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace FutureInThePast.Quests
+namespace MIDIFrogs.FutureInThePast.Quests
 {
     public static class QuestManager
     {
@@ -10,7 +10,7 @@ namespace FutureInThePast.Quests
 
         public static void Initialize()
         {
-            triggers = Resources.LoadAll<TriggerConfig>("Triggers").ToDictionary(x => x.Trigger.Tag, y => y.Trigger);
+            triggers = Resources.LoadAll<TriggerConfig>("Triggers").ToDictionary(x => x.Quest.Tag, y => y.Quest);
             // I don't know if it's actually needed.
             foreach (var trigger in triggers.Values)
                 trigger.IsCompleted = false;

@@ -23,6 +23,14 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
             waitButton?.SetResult(true);
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+            {
+                OnNextFrame();
+            }
+        }
+
         /// <summary>
         /// Animates the text writing it asynchronously char-by-char each <see langword="40"/> / <paramref name="textSpeed"/> milliseconds.
         /// </summary>
