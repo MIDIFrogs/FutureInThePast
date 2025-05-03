@@ -7,12 +7,14 @@ namespace FutureInThePast.Characters
         [Header("Physical")]
         [SerializeField] private float moveSpeed = 5f;
         [SerializeField] private float jumpHeight = 7f;
+        [SerializeField] private float superJumpHeight = 14f;
+        [SerializeField] private CircleCollider2D groundCheck;
 
         [Header("Constraints")]
         [SerializeField][Range(0, 1f)] private float moveConstraint = 0.1f;
 
         private bool canJump;
-        private bool isDead = false;
+        private bool superJump;
 
         private Rigidbody2D rb;
 
@@ -27,19 +29,13 @@ namespace FutureInThePast.Characters
 
         private void LateUpdate()
         {
-            if (!isDead)
-            {
-                HandleInput();
-            }
+            HandleInput();
         }
 
         private void FixedUpdate()
         {
-            if (!isDead)
-            {
-                HandleMovement();
-                HandleJump();
-            }
+            HandleMovement();
+            HandleJump();
         }
 
         private void HandleInput()
@@ -77,7 +73,9 @@ namespace FutureInThePast.Characters
             if (jumpInput && canJump)
             {
                 Jump();
-                canJump = false; // Disable further jumps until grounded
+                // Disable further jumps until grounded
+                superJump = false;
+                canJump = false; 
             }
 
             // Reset jump input after processing
@@ -86,27 +84,29 @@ namespace FutureInThePast.Characters
 
         private void Jump()
         {
-            rb.linearVelocityY = jumpHeight;
+            rb.linearVelocityY = superJump ? superJumpHeight : jumpHeight;
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
+        //private void OnCollisionEnter2D(Collision2D collision)
+        //{
+        //    // Check if the player is grounded
+        //    if (collision.gameObject.CompareTag("Ground"))
+        //    {
+        //        canJump = true; // Allow jump
+        //    }
+        //}
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            // Check if the player is grounded
             if (collision.gameObject.CompareTag("Ground"))
             {
-                canJump = true; // Allow jump
+                canJump = true;
             }
-        }
-
-        public void Die()
-        {
-            isDead = true;
-            // Additional logic for death can be added here
-        }
-
-        public bool IsDead()
-        {
-            return isDead;
+            if (collision.gameObject.CompareTag("JumpPad"))
+            {
+                canJump = true;
+                superJump = true;
+            }
         }
     }
 }

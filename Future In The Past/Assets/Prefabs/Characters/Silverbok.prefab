@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4935952084889547584}
   - component: {fileID: 6036220330872275132}
   - component: {fileID: 3438840208802119162}
+  - component: {fileID: -2117865031848384354}
   m_Layer: 0
   m_Name: Silverbok
   m_TagString: Player
@@ -156,7 +157,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1652847117334579637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpHeight: 14
+  jumpHeight: 7
+  superJumpHeight: 14
+  groundCheck: {fileID: 0}
   moveConstraint: 0.1
 --- !u!114 &4409830715195905578
 MonoBehaviour:
@@ -231,3 +234,39 @@ MonoBehaviour:
     width: 1
     height: 5
   testItem: []
+--- !u!58 &-2117865031848384354
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4219095075261861247}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: -0.4}
+  m_Radius: 0.25
