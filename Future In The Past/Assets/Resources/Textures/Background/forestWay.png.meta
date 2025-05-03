@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 1b434ffce35855842b014dbb3209193a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 498681222389299248
+    second: forestWay_0
+  - first:
+      213: -5482687816586470288
+    second: forestWay_1
+  - first:
+      213: -9174497343186223078
+    second: forestWay_2
+  - first:
+      213: 6299096112929853307
+    second: forestWay_3
+  - first:
+      213: 3350452171920367510
+    second: forestWay_4
+  - first:
+      213: -1397365271190982232
+    second: forestWay_5
+  - first:
+      213: -1652828867352879099
+    second: forestWay_6
+  - first:
+      213: -3066644711790312699
+    second: forestWay_7
+  - first:
+      213: -6938097779583457953
+    second: forestWay_8
+  - first:
+      213: -4658728785922002174
+    second: forestWay_9
+  - first:
+      213: -6409068965887100044
+    second: forestWay_10
+  - first:
+      213: 8262788126320256892
+    second: forestWay_11
+  - first:
+      213: -1980426846844076615
+    second: forestWay_12
+  - first:
+      213: -3690610207969013749
+    second: forestWay_13
+  - first:
+      213: 2549794117122407914
+    second: forestWay_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: forestWay_0
+      rect:
+        serializedVersion: 2
+        x: 1508
+        y: 1512
+        width: 338
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038fbacfdebabe600800000000000000
+      internalID: 498681222389299248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_1
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1732
+        width: 280
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c5006ba7499e3b0800000000000000
+      internalID: -5482687816586470288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_2
+      rect:
+        serializedVersion: 2
+        x: 2114
+        y: 1808
+        width: 312
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a10ce926643ada080800000000000000
+      internalID: -9174497343186223078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_3
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 856
+        width: 660
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f4a396a82ea6750800000000000000
+      internalID: 6299096112929853307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_4
+      rect:
+        serializedVersion: 2
+        x: 1982
+        y: 1336
+        width: 242
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69fdf38bf723f7e20800000000000000
+      internalID: 3350452171920367510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_5
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1136
+        width: 752
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1b13d70bf8b9ce0800000000000000
+      internalID: -1397365271190982232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_6
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1048
+        width: 568
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500abe6f6e8ff09e0800000000000000
+      internalID: -1652828867352879099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1038
+        width: 32
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5038865e1e61175d0800000000000000
+      internalID: -3066644711790312699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_8
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 990
+        width: 872
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55600f34dce6bf90800000000000000
+      internalID: -6938097779583457953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_9
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 950
+        width: 336
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2037b3a2aded85fb0800000000000000
+      internalID: -4658728785922002174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_10
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 884
+        width: 1438
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47bb1537bb96e07a0800000000000000
+      internalID: -6409068965887100044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_11
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 976
+        width: 752
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7762a3d5025ba270800000000000000
+      internalID: 8262788126320256892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_12
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 752
+        width: 894
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd363a864c1484e0800000000000000
+      internalID: -1980426846844076615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 724
+        width: 1364
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00939dc19158ccc0800000000000000
+      internalID: -3690610207969013749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forestWay_14
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 234
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed36797d30b26320800000000000000
+      internalID: 2549794117122407914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      forestWay_0: 498681222389299248
+      forestWay_1: -5482687816586470288
+      forestWay_10: -6409068965887100044
+      forestWay_11: 8262788126320256892
+      forestWay_12: -1980426846844076615
+      forestWay_13: -3690610207969013749
+      forestWay_14: 2549794117122407914
+      forestWay_2: -9174497343186223078
+      forestWay_3: 6299096112929853307
+      forestWay_4: 3350452171920367510
+      forestWay_5: -1397365271190982232
+      forestWay_6: -1652828867352879099
+      forestWay_7: -3066644711790312699
+      forestWay_8: -6938097779583457953
+      forestWay_9: -4658728785922002174
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
