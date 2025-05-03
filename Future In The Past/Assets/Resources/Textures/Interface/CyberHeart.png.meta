@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CyberHeart_0: -7012266923269101882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
