@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq;
+using System.Threading.Tasks;
 using FutureInThePast.Quests;
 using TMPro;
 using UnityEngine;
@@ -17,23 +18,28 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [SerializeField] private TMP_Text RequirementsText;
         [SerializeField] private Button button;
 
-        private bool isClicked;
+        private TaskCompletionSource<bool> clickTcs = new();
 
-        public IEnumerator WaitForClick(Response response, QuestManager quests)
+
+        public async Task WaitForClick(Response response)
         {
             responseText.text = response.Text;
-            button.enabled = response.Requirements.All(x => quests.IsTrigger(x.Tag));
-            if (!button.enabled)
+            Debug.Log($"Found requirements: {string.Join(',', response.Requirements.Select(x => x.Tag + ":" + x.IsCompleted))}");
+            button.interactable = response.Requirements.All(x => x.IsCompleted);
+            if (!button.interactable)
             {
                 RequirementsText.text = requirementsLabel + string.Join(Environment.NewLine, response.Requirements.Where(x => !x.IsCompleted).Select(x => x.Description));
             }
-            isClicked = false;
-            yield return new WaitUntil(() => isClicked);
+            else
+            {
+                RequirementsText.text = string.Empty;
+            }
+            await clickTcs.Task;
         }
 
         public void Click()
         {
-            isClicked = true;
+            clickTcs.SetResult(true);
         }
     }
 }

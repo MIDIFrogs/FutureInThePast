@@ -38,7 +38,8 @@ MonoBehaviour:
     fontStyle: 2
   responses:
   - text: "[300$] \u0414\u0430, \u044F \u0441\u043E\u0433\u043B\u0430\u0441\u0435\u043D"
-    requirements: []
+    requirements:
+    - {fileID: 11400000, guid: 6a8b948db54b48b429417c59afc22b53, type: 2}
     selectionTrigger: {fileID: 11400000, guid: 6a8b948db54b48b429417c59afc22b53, type: 2}
     continuation: {fileID: 0}
   - text: "[\u041E\u0442\u043A\u0430\u0437\u0430\u0442\u044C\u0441\u044F] \u041D\u0435\u0442
@@ -46,5 +47,6 @@ MonoBehaviour:
       \u0432\u0441\u044F\u043A\u0438\u0445 \u0436\u0435\u043D\u0449\u0438\u043D"
     requirements:
     - {fileID: 11400000, guid: afd97b7935a8dae45ac3ab63f03497be, type: 2}
-    selectionTrigger: {fileID: 0}
-    continuation: {fileID: 0}
+    selectionTrigger: {fileID: 11400000, guid: afd97b7935a8dae45ac3ab63f03497be, type: 2}
+    continuation: {fileID: 11400000, guid: 9faada878559f8b4bbf37a85e0b9cacc, type: 2}
+  endQuestion: 

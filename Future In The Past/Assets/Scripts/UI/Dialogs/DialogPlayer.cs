@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading.Tasks;
 using FutureInThePast.Quests;
 using UnityEngine;
 
@@ -15,36 +16,69 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [SerializeField] private DialogFrame dialogFrame;
         [SerializeField] private ResponseFrame responseFrame;
 
+        [Header("Debug options")]
+        [SerializeField] private Dialog startupDialog;
+
         public float TextSpeed => textSpeed;
 
         public bool Autoplay => autoplay;
+
+        public Task CurrentDialogTask { get; private set; }
+
+        private void Start()
+        {
+            if (startupDialog != null)
+            {
+                CurrentDialogTask = StartDialogAsync(startupDialog);
+            }
+        }
+
+        /// <summary>
+        /// Starts a dialog without waiting for the completion
+        /// </summary>
+        /// <param name="dialog">Dialog to read.</param>
+        public void StartDialog(Dialog dialog)
+        {
+            CurrentDialogTask = StartDialogAsync(dialog);
+        }
 
         /// <summary>
         /// Starts a dialog and waits for the completion.
         /// </summary>
         /// <param name="dialog">Dialog to read.</param>
-        public IEnumerator StartDialog(Dialog dialog)
+        public async Task StartDialogAsync(Dialog dialog)
         {
-            pauseMenu.IsPaused = true;
-
-            var clip = dialog.StartupClip;
-            while (clip != null)
+            try
             {
-                dialogFrame.gameObject.SetActive(true);
-                foreach (var replic in clip.Replics)
-                    yield return dialogFrame.ShowText(replic, TextSpeed, Autoplay);
-                dialogFrame.gameObject.SetActive(false);
-                if (clip.Responses.Count > 0)
+                pauseMenu.IsPaused = true;
+
+                var clip = dialog.StartupClip;
+                while (clip != null)
                 {
-                    responseFrame.gameObject.SetActive(true);
-                    yield return responseFrame.WaitForResponse(clip, quests);
-                    var response = responseFrame.Response;
-                    quests.SetTrigger(response.SelectionTrigger.Tag);
-                    clip = response.Continuation;
-                    responseFrame.gameObject.SetActive(false);
+                    dialogFrame.gameObject.SetActive(true);
+                    foreach (var replic in clip.Replics)
+                        await dialogFrame.ShowText(replic, TextSpeed, Autoplay);
+                    dialogFrame.gameObject.SetActive(false);
+                    if (clip.Responses.Count > 0)
+                    {
+                        responseFrame.gameObject.SetActive(true);
+                        var response = await responseFrame.WaitForResponse(clip);
+                        responseFrame.gameObject.SetActive(false);
+                        quests.SetTrigger(response.SelectionTrigger);
+                        clip = response.Continuation;
+                    }
+                    else
+                    {
+                        clip = null;
+                    }
                 }
+                pauseMenu.IsPaused = false;
             }
-            pauseMenu.IsPaused = false;
+            catch (System.Exception ex)
+            {
+                Debug.Log(ex);
+                Debug.LogErrorFormat("An error encountered while running a dialog. Exception details: {0}", ex.Message);
+            }
         }
     }
 }
