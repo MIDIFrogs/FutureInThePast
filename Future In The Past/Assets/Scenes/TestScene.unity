@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 20894487}
   - component: {fileID: 20894486}
   - component: {fileID: 20894485}
+  - component: {fileID: 20894489}
   m_Layer: 0
   m_Name: player (1)
   m_TagString: Player
@@ -286,6 +287,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &20894489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20894483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12468100b5a63a479f1db0057c937bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: 2247e4de4e2cd374689750ef3c63213a, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  hint: {fileID: 441966914}
 --- !u!1 &37461921
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +702,7 @@ GameObject:
   - component: {fileID: 457553449}
   - component: {fileID: 457553448}
   - component: {fileID: 457553447}
+  - component: {fileID: 457553452}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -840,6 +857,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 957885618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457553452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457553446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d12468100b5a63a479f1db0057c937bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMaterial: {fileID: 2100000, guid: 2247e4de4e2cd374689750ef3c63213a, type: 2}
+  defaultMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  hint: {fileID: 441966914}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,11 +1364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b744966f6ee50a40a86afc411f5c2bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 2247e4de4e2cd374689750ef3c63213a, type: 2}
-  defaultMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  interactionHint: {fileID: 441966914}
-  player: {fileID: 0}
-  dialogToPlay: {fileID: 0}
+  player: {fileID: 1923935880}
+  dialogToPlay: {fileID: 11400000, guid: 4e715e2b6d0cc67488740107e476baa8, type: 2}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +1969,7 @@ GameObject:
   - component: {fileID: 1565384399}
   - component: {fileID: 1565384398}
   - component: {fileID: 1565384397}
+  - component: {fileID: 1565384400}
   m_Layer: 0
   m_Name: grib
   m_TagString: Untagged
@@ -2075,9 +2105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c481b7f28864534d84e5f00b7b9941d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMaterial: {fileID: 2100000, guid: 2247e4de4e2cd374689750ef3c63213a, type: 2}
-  defaultMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
-  interactionHint: {fileID: 441966914}
   trigger: {fileID: 11400000, guid: aa7d6f6b5fb51814992dac294f57b333, type: 2}
   twoWay: 1
 --- !u!58 &1565384398
@@ -2115,7 +2142,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 1
+  m_Radius: 1.5
 --- !u!50 &1565384399
 Rigidbody2D:
   serializedVersion: 5
@@ -2143,6 +2170,42 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &1565384400
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565384393}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 1
 --- !u!114 &1568804062 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 458884421372932168, guid: 2438a624757ffde48a8bb53d27c9c281, type: 3}
