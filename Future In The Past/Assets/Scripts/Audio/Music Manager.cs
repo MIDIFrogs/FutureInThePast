@@ -24,8 +24,7 @@ namespace MIDIFrogs.FutureInThePast
         [System.Serializable]
         public class Track
         {
-            public AudioClip music; // Обычная версия
-            public AudioClip alternativeMusic; // Альтернативная версия
+            public AudioClip music;
             public Transition transition1;
             public Transition transition2;
         }
@@ -39,7 +38,6 @@ namespace MIDIFrogs.FutureInThePast
             [HideInInspector] public Vector2 topRight;
             public Track track;
             public LocationType locationType;
-            public bool visited; // Поле для отслеживания посещенности
         }
 
         public Location[] locations;
@@ -85,17 +83,6 @@ namespace MIDIFrogs.FutureInThePast
                         PlayTransition(currentTrack, newTrack, location);
                         currentTrack = newTrack;
                     }
-
-                    // Проверяем, посещалась ли локация
-                    if (!location.visited)
-                    {
-                        location.visited = true; // Отмечаем локацию как посещенную
-                        PlayMusic(newTrack); // Играем обычную версию
-                    }
-                    else
-                    {
-                        PlayAlternativeMusic(newTrack); // Играем альтернативную версию
-                    }
                     break;
                 }
             }
@@ -106,13 +93,6 @@ namespace MIDIFrogs.FutureInThePast
             audioSource.clip = track.music;
             audioSource.Play();
             Debug.Log($"Playing music: {track.music.name}");
-        }
-
-        void PlayAlternativeMusic(Track track)
-        {
-            audioSource.clip = track.alternativeMusic;
-            audioSource.Play();
-            Debug.Log($"Playing alternative music: {track.alternativeMusic.name}");
         }
 
         void PlayTransition(Track oldTrack, Track newTrack, Location location)
