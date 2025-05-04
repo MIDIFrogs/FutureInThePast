@@ -15,4 +15,4 @@ MonoBehaviour:
   trigger:
     tag: CigarettesInInventoryInThePast
     description: 
-  initialValue: 1
+  initialValue: 0
