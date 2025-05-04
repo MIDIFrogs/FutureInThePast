@@ -202,7 +202,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -1451,7 +1451,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -1460,7 +1460,60 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EarlyAccessHint2_0: 6869645645605525559
+      EarlyAccessHint2_1: -6995313583024668906
+      EarlyAccessHint2_10: 8579831465563245319
+      EarlyAccessHint2_11: -6400397052637466951
+      EarlyAccessHint2_12: 962173796892728737
+      EarlyAccessHint2_13: -9009947801423971836
+      EarlyAccessHint2_14: -1727245358779145028
+      EarlyAccessHint2_15: 2084000650655938982
+      EarlyAccessHint2_16: 7501509936465634463
+      EarlyAccessHint2_17: 4477103107411847058
+      EarlyAccessHint2_18: 1165234350022100024
+      EarlyAccessHint2_19: 2074544798565221585
+      EarlyAccessHint2_2: 5325592028221909820
+      EarlyAccessHint2_20: -1627844337245277027
+      EarlyAccessHint2_21: 1322510763616093665
+      EarlyAccessHint2_22: -4636806325806706546
+      EarlyAccessHint2_23: 1385083596045229739
+      EarlyAccessHint2_24: 7464338723260784216
+      EarlyAccessHint2_25: 5732496776679596278
+      EarlyAccessHint2_26: 6634995934075289452
+      EarlyAccessHint2_27: -4810201918577599741
+      EarlyAccessHint2_28: -3313923117695043616
+      EarlyAccessHint2_29: -66228103590422905
+      EarlyAccessHint2_3: -5716403571539001391
+      EarlyAccessHint2_30: -2329224780737642799
+      EarlyAccessHint2_31: -3922121548386543686
+      EarlyAccessHint2_32: -3709742439759517600
+      EarlyAccessHint2_33: -7758465597798769896
+      EarlyAccessHint2_34: -1939121205223965203
+      EarlyAccessHint2_35: 4022916879518902391
+      EarlyAccessHint2_36: -5059540888038895383
+      EarlyAccessHint2_37: 6698320489894674209
+      EarlyAccessHint2_38: -1086116537657394101
+      EarlyAccessHint2_39: -2870522660866498757
+      EarlyAccessHint2_4: -6407676157762257269
+      EarlyAccessHint2_40: 1210827512245475112
+      EarlyAccessHint2_41: -466484504166341957
+      EarlyAccessHint2_42: -1967674548524527398
+      EarlyAccessHint2_43: 6836909141653439034
+      EarlyAccessHint2_44: 4134272782430112429
+      EarlyAccessHint2_45: 3998480029147374339
+      EarlyAccessHint2_46: -1234725605166772313
+      EarlyAccessHint2_47: 5608647465468372495
+      EarlyAccessHint2_48: -910089035023582682
+      EarlyAccessHint2_49: 5495729180771926705
+      EarlyAccessHint2_5: -3953725316894784398
+      EarlyAccessHint2_50: -5812245040577323314
+      EarlyAccessHint2_51: 4742348827581673663
+      EarlyAccessHint2_52: 1578790526178556735
+      EarlyAccessHint2_6: 7281073543468017057
+      EarlyAccessHint2_7: 1830472441718567175
+      EarlyAccessHint2_8: -7904339606758312793
+      EarlyAccessHint2_9: -4900779552335639932
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

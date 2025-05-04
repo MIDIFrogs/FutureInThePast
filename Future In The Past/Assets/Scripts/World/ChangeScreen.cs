@@ -6,8 +6,15 @@ public class ScreenManager : MonoBehaviour
     public GameObject screen1; 
     public GameObject screen2; 
     public float transitionTime = 1.0f;
+    [SerializeField] private bool switchOnAwake;
 
     private bool suppressSwitch;
+
+    private void Awake()
+    {
+        if (switchOnAwake)
+            StartCoroutine(SwitchScreens());
+    }
 
     private void Start()
     {

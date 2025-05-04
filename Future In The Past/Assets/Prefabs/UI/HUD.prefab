@@ -402,18 +402,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   teammates:
-  - Trigger: {fileID: 11400000, guid: 81d340b8f17370b4f9fb7af82d5830c4, type: 2}
-    Avatar: {fileID: -70609499458415296, guid: ca8e34d75299aa541addbddb6b113f58, type: 3}
   - Trigger: {fileID: 11400000, guid: 311c47af5999290449b64619c15fe3c2, type: 2}
-    Avatar: {fileID: 2429984796779809176, guid: 93d6ffb653ea3ef4eb516a1942b593a8, type: 3}
+    Avatar: {fileID: 21300000, guid: 97b5b314e0ad6894791b7d8bd6e1a946, type: 3}
   - Trigger: {fileID: 11400000, guid: 369cc865c778cf84f8cfa6ee51a8715e, type: 2}
     Avatar: {fileID: -6803764550667272232, guid: c956dea9f8597594787874db5a896212, type: 3}
-  - Trigger: {fileID: 11400000, guid: ef8cc2e480bbe6c4b991837815ac44cf, type: 2}
-    Avatar: {fileID: 4808995212189061049, guid: e750d19c6b8174f4ab0bf08960e4b177, type: 3}
-  - Trigger: {fileID: 11400000, guid: b05e4f47b45436f4f9e5bde0c4b877ed, type: 2}
-    Avatar: {fileID: -6474192726034587501, guid: 8919b11872b859747b51719331f5d0ce, type: 3}
-  - Trigger: {fileID: 11400000, guid: 682c59464da16504892dd8cb531fca89, type: 2}
-    Avatar: {fileID: 6794036748560469393, guid: 46f9c2f768236454ba7704efa9d6d86f, type: 3}
+  - Trigger: {fileID: 11400000, guid: 3fe24f3a653d17e4bb1bf2518083ab45, type: 2}
+    Avatar: {fileID: 21300000, guid: 97b5b314e0ad6894791b7d8bd6e1a946, type: 3}
   imagePrefab: {fileID: 652970512166412541, guid: 024b94f62f3d2c1429d4c042c280d241, type: 3}
 --- !u!1 &5767437448029609008
 GameObject:
