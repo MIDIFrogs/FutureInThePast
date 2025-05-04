@@ -11,6 +11,7 @@ namespace SibGameJam.Inventory.UI
         {
             if (inventory.Slots == null)
             {
+                Debug.Log("The inventory is not initialized yet, initializing...");
                 inventory.Initialize();
             }
             foreach (var slot in inventory.Slots)

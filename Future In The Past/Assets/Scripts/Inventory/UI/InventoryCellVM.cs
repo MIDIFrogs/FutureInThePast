@@ -23,6 +23,7 @@ namespace SibGameJam.Inventory.UI
 
         private void UpdateView()
         {
+            Debug.Log($"Updating view to {Slot.ItemInfo?.name}");
             icon.sprite = Slot.ItemInfo?.Icon ?? emptySprite;
         }
     }

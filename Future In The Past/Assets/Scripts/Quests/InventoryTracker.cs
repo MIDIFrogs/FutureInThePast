@@ -16,6 +16,7 @@ namespace SibGameJam.Inventory.UI
 
         private void Awake()
         {
+            Debug.Log("Initializing inventory tracker.");
             if (!isInitialized)
             {
                 Initialize();

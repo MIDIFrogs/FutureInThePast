@@ -38,6 +38,7 @@ namespace SibGameJam.Inventory
                     TryAddItem(item);
                 }
             }
+            isInitialize = true;
         }
 
         private void Slot_OnSlotStatusUpdate(object sender, CustomEventArgs.InventoryEventArgs e)
@@ -103,10 +104,9 @@ namespace SibGameJam.Inventory
 
         private void Awake()
         {
-            if(!isInitialize)
+            if (!isInitialize)
             {
                 Initialize();
-                isInitialize = true;
             }
         }
 

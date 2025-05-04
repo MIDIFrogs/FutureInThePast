@@ -18,10 +18,12 @@ namespace MIDIFrogs.FutureInThePast
             if (placed && inventory.TryAddItem(seedItem))
             {
                 QuestManager.ResetTrigger(trigger.Quest);
+                placed = false;
             }
             else if (!placed && inventory.TryRemoveItem(seedItem))
             {
                 QuestManager.SetTrigger(trigger.Quest);
+                placed = true;
             }
         }
     }
