@@ -8,10 +8,16 @@ namespace MIDIFrogs.FutureInThePast
         [Header("Interactions")]
         [SerializeField] private DialogPlayer player;
         [SerializeField] private Dialog dialogToPlay;
+        [SerializeField] private bool canRepeat = false;
+        private bool isPlayed = false;
 
         public override void OnInteract()
         {
-            player.StartDialog(dialogToPlay);
+            if (!isPlayed || canRepeat)
+            {
+                player.StartDialog(dialogToPlay);
+                isPlayed = true;
+            }
         }
     }
 }

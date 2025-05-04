@@ -14,7 +14,7 @@ namespace SibGameJam.Inventory
         [SerializeField] private List<ItemInfo> testItem;
         
         private InventorySlot[] _slots;
-
+        private bool isInitialize = false;
         public InventoryGrid InventoryGrid => inventoryGrid;
         public int MaxCapacity => inventoryGrid.Width * inventoryGrid.Height;
         public IReadOnlyList<InventorySlot> Slots => _slots;
@@ -101,7 +101,14 @@ namespace SibGameJam.Inventory
             droppedSlot.AddInSlot(tempSlot.ItemInfo);
         }
 
-        private void Awake() => Initialize();
+        private void Awake()
+        {
+            if(!isInitialize)
+            {
+                Initialize();
+                isInitialize = true;
+            }
+        }
 
         public IEnumerator<ItemInfo> GetEnumerator()
         {

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: items.Array.data[0].Trigger
       value: 
       objectReference: {fileID: 11400000, guid: 7f19abc8d7dd59d4c84462760b400cb8, type: 2}
+    - target: {fileID: 1652847117334579637, guid: 53756319324a21d4fa53799d1f5f58b7, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 5992604480719919281}
     - target: {fileID: 4219095075261861247, guid: 53756319324a21d4fa53799d1f5f58b7, type: 3}
       propertyPath: m_Name
       value: kolobok
@@ -73,3 +77,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53756319324a21d4fa53799d1f5f58b7, type: 3}
+--- !u!58 &5992604480719919281 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8111618961722379202, guid: 53756319324a21d4fa53799d1f5f58b7, type: 3}
+  m_PrefabInstance: {fileID: 2573878043373245299}
+  m_PrefabAsset: {fileID: 0}
