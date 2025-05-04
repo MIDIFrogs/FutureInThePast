@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: 1. Introduction Dialog
   m_EditorClassIdentifier: 
   clips:
+  - {fileID: 11400000, guid: 081b6f6075846ea41a87c513525e9ed4, type: 2}
   - {fileID: 11400000, guid: c3005adb7e09150469f9aa9d43fa6097, type: 2}

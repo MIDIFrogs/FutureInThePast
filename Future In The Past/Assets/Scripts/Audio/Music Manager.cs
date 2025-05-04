@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast
 {
+    [RequireComponent(typeof(MusicManager))]
     public class MusicManager : MonoBehaviour
     {
         public enum LocationType
@@ -48,7 +49,7 @@ namespace MIDIFrogs.FutureInThePast
 
         void Start()
         {
-            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource = gameObject.GetComponent<AudioSource>();
             InitializeTracks();
             currentTrack = locations[0].track;
             PlayMusic(currentTrack);

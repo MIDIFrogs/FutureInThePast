@@ -44,7 +44,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
             var clicked = await Task.WhenAny(buttonTasks);
             int selectedButton = buttonTasks.IndexOf(clicked);
             Debug.Log($"Selected button index: {selectedButton}");
-            return clip.Responses.ElementAtOrDefault(selectedButton);
+            return clip.Responses.ElementAt(selectedButton);
         }
 
         public void OnHistoryOpen()

@@ -47,11 +47,11 @@ AudioRandomContainer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Zavod
-  m_Volume: 0
+  m_Volume: -2
   m_Pitch: 0
   m_AutomaticTriggerTime: 0
   m_LoopCount: 1
-  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_VolumeRandomizationRange: {x: -7, y: 0}
   m_PitchRandomizationRange: {x: -200, y: 400}
   m_AutomaticTriggerTimeRandomizationRange: {x: -0.5, y: 0.5}
   m_LoopCountRandomizationRange: {x: 0, y: 0}
@@ -65,7 +65,7 @@ AudioRandomContainer:
   m_TriggerMode: 1
   m_AutomaticTriggerMode: 1
   m_LoopMode: 0
-  m_VolumeRandomizationEnabled: 0
+  m_VolumeRandomizationEnabled: 1
   m_PitchRandomizationEnabled: 1
   m_AutomaticTriggerTimeRandomizationEnabled: 1
   m_LoopCountRandomizationEnabled: 0
