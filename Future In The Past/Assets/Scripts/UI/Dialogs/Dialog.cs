@@ -9,8 +9,8 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
     public class Dialog : ScriptableObject
     {
 
-        [SerializeField] private DialogClip startupClip;
+        [SerializeField] private List<DialogClip> clips;
 
-        public DialogClip StartupClip => startupClip;
+        public List<DialogClip> Clips => clips;
     }
 }

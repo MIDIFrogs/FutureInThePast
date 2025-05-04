@@ -52,26 +52,30 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
             {
                 pauseMenu.IsPaused = true;
 
-                var clip = dialog.StartupClip;
-                while (clip != null)
+                foreach (var clip in dialog.Clips)
                 {
-                    dialogFrame.gameObject.SetActive(true);
-                    foreach (var replic in clip.Replics)
-                        await dialogFrame.ShowText(replic, TextSpeed, Autoplay);
-                    dialogFrame.gameObject.SetActive(false);
-                    if (clip.Responses.Count > 0)
+                    var currentClip = clip;
+                    while (currentClip != null)
                     {
-                        responseFrame.gameObject.SetActive(true);
-                        var response = await responseFrame.WaitForResponse(clip);
-                        responseFrame.gameObject.SetActive(false);
-                        QuestManager.SetTrigger(response.SelectionTrigger);
-                        clip = response.Continuation;
-                    }
-                    else
-                    {
-                        clip = null;
+                        dialogFrame.gameObject.SetActive(true);
+                        foreach (var replic in currentClip.Replics)
+                            await dialogFrame.ShowText(replic, TextSpeed, Autoplay);
+                        dialogFrame.gameObject.SetActive(false);
+                        if (currentClip.Responses.Count > 0)
+                        {
+                            responseFrame.gameObject.SetActive(true);
+                            var response = await responseFrame.WaitForResponse(currentClip);
+                            responseFrame.gameObject.SetActive(false);
+                            QuestManager.SetTrigger(response.SelectionTrigger);
+                            currentClip = response.Continuation;
+                        }
+                        else
+                        {
+                            currentClip = null;
+                        }
                     }
                 }
+                
                 pauseMenu.IsPaused = false;
             }
             catch (System.Exception ex)

@@ -8,9 +8,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6211659061754914587, guid: 53756319324a21d4fa53799d1f5f58b7, type: 3}
+      propertyPath: items.Array.data[0].Trigger
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f19abc8d7dd59d4c84462760b400cb8, type: 2}
     - target: {fileID: 4219095075261861247, guid: 53756319324a21d4fa53799d1f5f58b7, type: 3}
       propertyPath: m_Name
-      value: Silverbok Variant
+      value: kolobok
       objectReference: {fileID: 0}
     - target: {fileID: 5236011352488435274, guid: 53756319324a21d4fa53799d1f5f58b7, type: 3}
       propertyPath: m_Color.b

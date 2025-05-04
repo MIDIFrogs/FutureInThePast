@@ -6,7 +6,7 @@ namespace MIDIFrogs.FutureInThePast.Quests
     [Serializable]
     public class QuestTrigger
     {
-        [SerializeField] private string tag;
+        public string tag;
         [SerializeField] private string description;
 
         private bool isCompleted;

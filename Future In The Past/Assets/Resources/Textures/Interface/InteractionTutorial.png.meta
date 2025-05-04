@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 9cb8b5e4f3ab1a34ebd990269ef6027e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1296663530445213689
+    second: InteractionTutorial_0
+  - first:
+      213: -4816397026169903967
+    second: InteractionTutorial_1
+  - first:
+      213: -7844540802082876437
+    second: InteractionTutorial_2
+  - first:
+      213: -6936791835328118333
+    second: InteractionTutorial_3
+  - first:
+      213: -5149675107950821809
+    second: InteractionTutorial_4
+  - first:
+      213: -3604774708280139530
+    second: InteractionTutorial_5
+  - first:
+      213: 1164619916612926654
+    second: InteractionTutorial_6
+  - first:
+      213: -2324510359894734732
+    second: InteractionTutorial_7
+  - first:
+      213: -609918339996886980
+    second: InteractionTutorial_8
+  - first:
+      213: 920892798673981400
+    second: InteractionTutorial_9
+  - first:
+      213: -2679593912874430292
+    second: InteractionTutorial_10
+  - first:
+      213: 7573830430979185572
+    second: InteractionTutorial_11
+  - first:
+      213: 8841057803308648659
+    second: InteractionTutorial_12
+  - first:
+      213: -4121169667211399470
+    second: InteractionTutorial_13
+  - first:
+      213: -364193573990968726
+    second: InteractionTutorial_14
+  - first:
+      213: 7002640561562239642
+    second: InteractionTutorial_15
+  - first:
+      213: 3430540981709224551
+    second: InteractionTutorial_16
+  - first:
+      213: 5497126590480216287
+    second: InteractionTutorial_17
+  - first:
+      213: -5751129808367978621
+    second: InteractionTutorial_18
+  - first:
+      213: 7409737006536720025
+    second: InteractionTutorial_19
+  - first:
+      213: 9207760546735714193
+    second: InteractionTutorial_20
+  - first:
+      213: 3372415772698339504
+    second: InteractionTutorial_21
+  - first:
+      213: 7830404201841061343
+    second: InteractionTutorial_22
+  - first:
+      213: 1081972317594031634
+    second: InteractionTutorial_23
+  - first:
+      213: 236469256337590896
+    second: InteractionTutorial_24
+  - first:
+      213: -49177151153360449
+    second: InteractionTutorial_25
+  - first:
+      213: -351923019362598256
+    second: InteractionTutorial_26
+  - first:
+      213: -8692302102814564250
+    second: InteractionTutorial_27
+  - first:
+      213: -338756896561273633
+    second: InteractionTutorial_28
+  - first:
+      213: -2616986381124927342
+    second: InteractionTutorial_29
+  - first:
+      213: -3870771736402230726
+    second: InteractionTutorial_30
+  - first:
+      213: -4947365492660903307
+    second: InteractionTutorial_31
+  - first:
+      213: -4979485478430187359
+    second: InteractionTutorial_32
+  - first:
+      213: 2782118782252698105
+    second: InteractionTutorial_33
+  - first:
+      213: -1400145727573328803
+    second: InteractionTutorial_34
+  - first:
+      213: -790875017120854252
+    second: InteractionTutorial_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: InteractionTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 235
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff04656c9caef110800000000000000
+      internalID: 1296663530445213689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 236
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a425ed4c68b82db0800000000000000
+      internalID: -4816397026169903967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 236
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3dac1e3b7922390800000000000000
+      internalID: -7844540802082876437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 235
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c1007614909bbf90800000000000000
+      internalID: -6936791835328118333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 235
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e7be106cda888b0800000000000000
+      internalID: -5149675107950821809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 236
+        width: 53
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f066a1708449fdc0800000000000000
+      internalID: -3604774708280139530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 236
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcfe0cc4af892010800000000000000
+      internalID: 1164619916612926654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 234
+        width: 75
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47842c9b42eadbfd0800000000000000
+      internalID: -2324510359894734732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 235
+        width: 63
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c385d7250822987f0800000000000000
+      internalID: -609918339996886980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 236
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df8d2d0f1ba7cc00800000000000000
+      internalID: 920892798673981400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 236
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca012d8888b20dad0800000000000000
+      internalID: -2679593912874430292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 127
+        width: 71
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abde8b26a6ab1960800000000000000
+      internalID: 7573830430979185572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 127
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d848ecea3fb1ba70800000000000000
+      internalID: 8841057803308648659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 127
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2deefb6c50aaec6c0800000000000000
+      internalID: -4121169667211399470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 129
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a62d9c0cfdf12faf0800000000000000
+      internalID: -364193573990968726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 128
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a92c8a93d706e2160800000000000000
+      internalID: 7002640561562239642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 129
+        width: 75
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ab23ad8dabb9f20800000000000000
+      internalID: 3430540981709224551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 127
+        width: 75
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd07dee4287b94c40800000000000000
+      internalID: 5497126590480216287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 101
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387f01bf8e1ef20b0800000000000000
+      internalID: -5751129808367978621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 129
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99effa98c8ca4d660800000000000000
+      internalID: 7409737006536720025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 127
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fe905be6988cf70800000000000000
+      internalID: 9207760546735714193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 128
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8eb96074a3dce20800000000000000
+      internalID: 3372415772698339504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 23
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd6672622f2bac60800000000000000
+      internalID: 7830404201841061343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 23
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2169ffe1710f30f00800000000000000
+      internalID: 1081972317594031634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 21
+        width: 67
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a8d48298b184300800000000000000
+      internalID: 236469256337590896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 22
+        width: 63
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb1307e34a9415ff0800000000000000
+      internalID: -49177151153360449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 21
+        width: 77
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0920c92e0e7bd1bf0800000000000000
+      internalID: -351923019362598256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 22
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6606b519a4dbe5780800000000000000
+      internalID: -8692302102814564250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 23
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4604bb56e7c4bf0800000000000000
+      internalID: -338756896561273633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 23
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290830370c89eabd0800000000000000
+      internalID: -2616986381124927342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_30
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 21
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a328f1d2d91484ac0800000000000000
+      internalID: -3870771736402230726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_31
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 23
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572ebe3fb4d675bb0800000000000000
+      internalID: -4947365492660903307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_32
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 23
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0e3fdf65055eab0800000000000000
+      internalID: -4979485478430187359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_33
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 23
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f94d1bca421c9620800000000000000
+      internalID: 2782118782252698105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_34
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 22
+        width: 63
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cf53a01eea19ce0800000000000000
+      internalID: -1400145727573328803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: InteractionTutorial_35
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 22
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41fc7c6bc5f3605f0800000000000000
+      internalID: -790875017120854252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      InteractionTutorial_0: 1296663530445213689
+      InteractionTutorial_1: -4816397026169903967
+      InteractionTutorial_10: -2679593912874430292
+      InteractionTutorial_11: 7573830430979185572
+      InteractionTutorial_12: 8841057803308648659
+      InteractionTutorial_13: -4121169667211399470
+      InteractionTutorial_14: -364193573990968726
+      InteractionTutorial_15: 7002640561562239642
+      InteractionTutorial_16: 3430540981709224551
+      InteractionTutorial_17: 5497126590480216287
+      InteractionTutorial_18: -5751129808367978621
+      InteractionTutorial_19: 7409737006536720025
+      InteractionTutorial_2: -7844540802082876437
+      InteractionTutorial_20: 9207760546735714193
+      InteractionTutorial_21: 3372415772698339504
+      InteractionTutorial_22: 7830404201841061343
+      InteractionTutorial_23: 1081972317594031634
+      InteractionTutorial_24: 236469256337590896
+      InteractionTutorial_25: -49177151153360449
+      InteractionTutorial_26: -351923019362598256
+      InteractionTutorial_27: -8692302102814564250
+      InteractionTutorial_28: -338756896561273633
+      InteractionTutorial_29: -2616986381124927342
+      InteractionTutorial_3: -6936791835328118333
+      InteractionTutorial_30: -3870771736402230726
+      InteractionTutorial_31: -4947365492660903307
+      InteractionTutorial_32: -4979485478430187359
+      InteractionTutorial_33: 2782118782252698105
+      InteractionTutorial_34: -1400145727573328803
+      InteractionTutorial_35: -790875017120854252
+      InteractionTutorial_4: -5149675107950821809
+      InteractionTutorial_5: -3604774708280139530
+      InteractionTutorial_6: 1164619916612926654
+      InteractionTutorial_7: -2324510359894734732
+      InteractionTutorial_8: -609918339996886980
+      InteractionTutorial_9: 920892798673981400
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,6 +9,10 @@ namespace SibGameJam.Inventory.UI
 
         private void Start()
         {
+            if (inventory.Slots == null)
+            {
+                inventory.Initialize();
+            }
             foreach (var slot in inventory.Slots)
             {
                 var slotVM = Instantiate(cellPrefab, transform);

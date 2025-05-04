@@ -27,7 +27,7 @@ namespace FutureInThePast.Characters
                 hint.SetActive(true);
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    nearestInteractable.OnInteract();
+                    foreach (var x in nearestInteractable.GetComponents<InteractiveObject>()) x.OnInteract();
                 }
             }
             else

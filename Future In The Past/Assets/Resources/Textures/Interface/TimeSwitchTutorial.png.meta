@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 0b45571c77865a141a46ede9b02aee54
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5460501587036483402
+    second: TimeSwitchTutorial_0
+  - first:
+      213: 5573126961598865326
+    second: TimeSwitchTutorial_1
+  - first:
+      213: -3373467698538146946
+    second: TimeSwitchTutorial_2
+  - first:
+      213: -1467271120072703290
+    second: TimeSwitchTutorial_3
+  - first:
+      213: -8917655027481321890
+    second: TimeSwitchTutorial_4
+  - first:
+      213: 331724471035782745
+    second: TimeSwitchTutorial_5
+  - first:
+      213: 6017968413262008996
+    second: TimeSwitchTutorial_6
+  - first:
+      213: 8267242141720486629
+    second: TimeSwitchTutorial_7
+  - first:
+      213: 2607770185966727925
+    second: TimeSwitchTutorial_8
+  - first:
+      213: 1232571051364003804
+    second: TimeSwitchTutorial_9
+  - first:
+      213: 8027035234842223387
+    second: TimeSwitchTutorial_10
+  - first:
+      213: -494815526295240000
+    second: TimeSwitchTutorial_11
+  - first:
+      213: -3119454523389532666
+    second: TimeSwitchTutorial_12
+  - first:
+      213: 1806641739321620113
+    second: TimeSwitchTutorial_13
+  - first:
+      213: -85925462074863428
+    second: TimeSwitchTutorial_14
+  - first:
+      213: -6261752774534210887
+    second: TimeSwitchTutorial_15
+  - first:
+      213: 7169125994092613198
+    second: TimeSwitchTutorial_16
+  - first:
+      213: -8810224725716113226
+    second: TimeSwitchTutorial_17
+  - first:
+      213: 1226492834875763952
+    second: TimeSwitchTutorial_18
+  - first:
+      213: -187999065284410374
+    second: TimeSwitchTutorial_19
+  - first:
+      213: 543195829754256612
+    second: TimeSwitchTutorial_20
+  - first:
+      213: 7424194702935908300
+    second: TimeSwitchTutorial_21
+  - first:
+      213: -2468766278521080850
+    second: TimeSwitchTutorial_22
+  - first:
+      213: -349778500428449568
+    second: TimeSwitchTutorial_23
+  - first:
+      213: 4564512782477946881
+    second: TimeSwitchTutorial_24
+  - first:
+      213: -2200050721938342377
+    second: TimeSwitchTutorial_25
+  - first:
+      213: 4330847284932616193
+    second: TimeSwitchTutorial_26
+  - first:
+      213: -1073051161986913274
+    second: TimeSwitchTutorial_27
+  - first:
+      213: 8013066791977045522
+    second: TimeSwitchTutorial_28
+  - first:
+      213: 4466448736095858056
+    second: TimeSwitchTutorial_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 236
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f24ce234997cb40800000000000000
+      internalID: 5460501587036483402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 234
+        width: 175
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaf9042a179b75d40800000000000000
+      internalID: 5573126961598865326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_2
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 235
+        width: 77
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73116760090f21d0800000000000000
+      internalID: -3373467698538146946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_3
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 236
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c280e2b0b433abe0800000000000000
+      internalID: -1467271120072703290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_4
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 237
+        width: 57
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5edf7110002e3480800000000000000
+      internalID: -8917655027481321890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_5
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 237
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956646b16a58a9400800000000000000
+      internalID: 331724471035782745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_6
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 209
+        width: 121
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2d006236e148350800000000000000
+      internalID: 6017968413262008996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_7
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 237
+        width: 73
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2a3691de42bb270800000000000000
+      internalID: 8267242141720486629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_8
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 235
+        width: 66
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2b666ea29a03420800000000000000
+      internalID: 2607770185966727925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_9
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 236
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf2bfc37d8fa1110800000000000000
+      internalID: 1232571051364003804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_10
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 130
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b13a05c5402c56f60800000000000000
+      internalID: 8027035234842223387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 130
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c203d586ef0229f0800000000000000
+      internalID: -494815526295240000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_12
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 130
+        width: 51
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606a16873a875b4d0800000000000000
+      internalID: -3119454523389532666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_13
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 130
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196b8a4071b721910800000000000000
+      internalID: 1806641739321620113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_14
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 128
+        width: 77
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0dddb5f3bbecef0800000000000000
+      internalID: -85925462074863428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_15
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 130
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ba529a1709c919a0800000000000000
+      internalID: -6261752774534210887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_16
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 129
+        width: 84
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ec8e3ab1add7360800000000000000
+      internalID: 7169125994092613198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_17
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 130
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8e3506a4bcbb580800000000000000
+      internalID: -8810224725716113226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_18
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 129
+        width: 58
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fce45e2cb0650110800000000000000
+      internalID: 1226492834875763952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_19
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 129
+        width: 63
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af30e9f98d7146df0800000000000000
+      internalID: -187999065284410374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_20
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 129
+        width: 64
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ecd9fbaab1d98700800000000000000
+      internalID: 543195829754256612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 24
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfd4db4fb9080760800000000000000
+      internalID: 7424194702935908300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 23
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3b947562e2dbdd0800000000000000
+      internalID: -2468766278521080850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_23
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 24
+        width: 60
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8b4eb9e46552bf0800000000000000
+      internalID: -349778500428449568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_24
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 24
+        width: 52
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100f35c1138685f30800000000000000
+      internalID: 4564512782477946881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_25
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 24
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ef5075689d771e0800000000000000
+      internalID: -2200050721938342377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_26
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 23
+        width: 77
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100afdae8a24a1c30800000000000000
+      internalID: 4330847284932616193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_27
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 24
+        width: 63
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c23f747a1cb11f0800000000000000
+      internalID: -1073051161986913274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_28
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 23
+        width: 57
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e4541dac1243f60800000000000000
+      internalID: 8013066791977045522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TimeSwitchTutorial_29
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 22
+        width: 63
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d6c7216730cfd30800000000000000
+      internalID: 4466448736095858056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TimeSwitchTutorial_0: 5460501587036483402
+      TimeSwitchTutorial_1: 5573126961598865326
+      TimeSwitchTutorial_10: 8027035234842223387
+      TimeSwitchTutorial_11: -494815526295240000
+      TimeSwitchTutorial_12: -3119454523389532666
+      TimeSwitchTutorial_13: 1806641739321620113
+      TimeSwitchTutorial_14: -85925462074863428
+      TimeSwitchTutorial_15: -6261752774534210887
+      TimeSwitchTutorial_16: 7169125994092613198
+      TimeSwitchTutorial_17: -8810224725716113226
+      TimeSwitchTutorial_18: 1226492834875763952
+      TimeSwitchTutorial_19: -187999065284410374
+      TimeSwitchTutorial_2: -3373467698538146946
+      TimeSwitchTutorial_20: 543195829754256612
+      TimeSwitchTutorial_21: 7424194702935908300
+      TimeSwitchTutorial_22: -2468766278521080850
+      TimeSwitchTutorial_23: -349778500428449568
+      TimeSwitchTutorial_24: 4564512782477946881
+      TimeSwitchTutorial_25: -2200050721938342377
+      TimeSwitchTutorial_26: 4330847284932616193
+      TimeSwitchTutorial_27: -1073051161986913274
+      TimeSwitchTutorial_28: 8013066791977045522
+      TimeSwitchTutorial_29: 4466448736095858056
+      TimeSwitchTutorial_3: -1467271120072703290
+      TimeSwitchTutorial_4: -8917655027481321890
+      TimeSwitchTutorial_5: 331724471035782745
+      TimeSwitchTutorial_6: 6017968413262008996
+      TimeSwitchTutorial_7: 8267242141720486629
+      TimeSwitchTutorial_8: 2607770185966727925
+      TimeSwitchTutorial_9: 1232571051364003804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

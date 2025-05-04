@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using MIDIFrogs.FutureInThePast.Quests;
 using UnityEngine;
 
@@ -7,17 +9,21 @@ namespace MIDIFrogs.FutureInThePast
     {
         [Header("Trigger")]
         [SerializeField] private TriggerConfig trigger;
+        [SerializeField] private List<TriggerConfig> requirements;
         [SerializeField] private bool twoWay;
 
         public override void OnInteract()
         {
-            if (!trigger.Quest.IsCompleted)
+            if (requirements.All(x => x.Quest.IsCompleted))
             {
-                QuestManager.SetTrigger(trigger.Quest);
-            }
-            else if (twoWay)
-            {
-                QuestManager.ResetTrigger(trigger.Quest);
+                if (!trigger.Quest.IsCompleted)
+                {
+                    QuestManager.SetTrigger(trigger.Quest);
+                }
+                else if (twoWay)
+                {
+                    QuestManager.ResetTrigger(trigger.Quest);
+                }
             }
         }
     }

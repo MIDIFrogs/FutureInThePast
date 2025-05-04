@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast.Quests
@@ -10,10 +9,12 @@ namespace MIDIFrogs.FutureInThePast.Quests
 
         public static void Initialize()
         {
-            triggers = Resources.LoadAll<TriggerConfig>("Triggers").ToDictionary(x => x.Quest.Tag, y => y.Quest);
-            // I don't know if it's actually needed.
-            foreach (var trigger in triggers.Values)
-                trigger.IsCompleted = false;
+            triggers = new();
+            foreach (var config in Resources.LoadAll<TriggerConfig>("Triggers"))
+            {
+                triggers[config.Quest.Tag] = config.Quest;
+                config.Quest.IsCompleted = config.InitialValue;
+            }
         }
 
         public static QuestTrigger GetTrigger(string name) => triggers[name];

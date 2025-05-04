@@ -171,8 +171,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpHeight: 7
-  superJumpHeight: 14
+  jumpHeight: 10
+  superJumpHeight: 20
   groundCheck: {fileID: 0}
   moveConstraint: 0.1
 --- !u!114 &4409830715195905578
