@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a551ae8ae1056bc4dabd37eae2917e36, type: 3}
   m_Name: Ending - Pigs
   m_EditorClassIdentifier: 
-  clips: []
+  clips:
+  - {fileID: 11400000, guid: 377ddf754276f14459e6c5490db3b92e, type: 2}

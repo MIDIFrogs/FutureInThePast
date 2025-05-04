@@ -328,6 +328,9 @@ MonoBehaviour:
   - Triggers:
     - {fileID: 11400000, guid: 7385d2e9df4b4574690b71f8e09402d6, type: 2}
     EndingDialog: {fileID: 11400000, guid: d272378b2280be04eb0e5849ab6bda3f, type: 2}
+  - Triggers:
+    - {fileID: 11400000, guid: 3fe24f3a653d17e4bb1bf2518083ab45, type: 2}
+    EndingDialog: {fileID: 11400000, guid: 0b36d1ad5aa27da4eba98d6990bc38cb, type: 2}
   dialogPlayer: {fileID: 1833822408}
   backNavigator: {fileID: 778994882}
 --- !u!114 &778994882
@@ -850,6 +853,7 @@ MonoBehaviour:
   autoplay: 0
   dialogFrame: {fileID: 1494508044}
   responseFrame: {fileID: 662731934}
+  endgameNavigator: {fileID: 0}
   startupDialog: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
