@@ -810,7 +810,34 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EarlyAccessHint1_0: 515827107109045738
+      EarlyAccessHint1_1: -2482407520191499778
+      EarlyAccessHint1_10: -7714050241839883820
+      EarlyAccessHint1_11: 164885632023753008
+      EarlyAccessHint1_12: -6047772201479242001
+      EarlyAccessHint1_13: -6124107992977618099
+      EarlyAccessHint1_14: -4843655417009689659
+      EarlyAccessHint1_15: 2408742456206388103
+      EarlyAccessHint1_16: -6677710160970341632
+      EarlyAccessHint1_17: -5555931351438565912
+      EarlyAccessHint1_18: -5064467940695497001
+      EarlyAccessHint1_19: -3052890456463243096
+      EarlyAccessHint1_2: 1177556377428534976
+      EarlyAccessHint1_20: 4147725454472754762
+      EarlyAccessHint1_21: 167143573927621535
+      EarlyAccessHint1_22: -8445592102003575435
+      EarlyAccessHint1_23: 2920274516792907960
+      EarlyAccessHint1_24: 4730950522270140429
+      EarlyAccessHint1_25: 8169132241090332958
+      EarlyAccessHint1_26: -213561232507926170
+      EarlyAccessHint1_3: 9178207004890009885
+      EarlyAccessHint1_4: 3097202468279895695
+      EarlyAccessHint1_5: -901563511143012381
+      EarlyAccessHint1_6: -224216870313277401
+      EarlyAccessHint1_7: 3609565840334727152
+      EarlyAccessHint1_8: -5367794620049993716
+      EarlyAccessHint1_9: -3535774030298388036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
