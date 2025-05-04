@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-6574714433760477938
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]menu click 4_{-6574714433760477938}'
+  m_AudioClip: {fileID: 8300000, guid: d46a40c00b324c14298bb0a438c7f8bd, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5744378897136051786
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]menu click 1_{-5744378897136051786}'
+  m_AudioClip: {fileID: 8300000, guid: 87f105ade9f50d144969e19e2a96b1cc, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4684234974901480878
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]menu click 5_{-4684234974901480878}'
+  m_AudioClip: {fileID: 8300000, guid: cdefd287598dec24d86a7f6d8c759930, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2323149906470057003
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]menu click 6_{-2323149906470057003}'
+  m_AudioClip: {fileID: 8300000, guid: 8e995dfc600265247a12a263b2d4bce6, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1764573969655546027
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]menu click 3_{-1764573969655546027}'
+  m_AudioClip: {fileID: 8300000, guid: 9606c367b49aefa4aa40dcdea5429b04, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3884237218416193339
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]menu click 2_{3884237218416193339}'
+  m_AudioClip: {fileID: 8300000, guid: b820455aa384ce54d96f0501125c1873, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Future Click
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -5744378897136051786}
+  - {fileID: 3884237218416193339}
+  - {fileID: -1764573969655546027}
+  - {fileID: -6574714433760477938}
+  - {fileID: -4684234974901480878}
+  - {fileID: -2323149906470057003}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 2
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 1
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0

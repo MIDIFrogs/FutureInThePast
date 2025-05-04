@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-8293228773599623540
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]past menu click 6_{-8293228773599623540}'
+  m_AudioClip: {fileID: 8300000, guid: 6fdb24b3d1843eb49bb5e54e87d248ca, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6444725494768329081
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]past menu click 5_{-6444725494768329081}'
+  m_AudioClip: {fileID: 8300000, guid: 9fa0062e9790da348be4675fd0c1c9b1, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1345056500102150995
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]past menu click 2_{-1345056500102150995}'
+  m_AudioClip: {fileID: 8300000, guid: daa83382c2176624090eaef455b3c82d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1310479030693956250
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]past menu click 1_{1310479030693956250}'
+  m_AudioClip: {fileID: 8300000, guid: 454a5f467fcc3694e97c9bb206621c4e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5064499051008824255
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]past menu click 4_{5064499051008824255}'
+  m_AudioClip: {fileID: 8300000, guid: ca00e53993ba9e6449ae3e411a0c8226, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5287502997576392783
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: '[sound][beta]past menu click 3_{5287502997576392783}'
+  m_AudioClip: {fileID: 8300000, guid: d1f08836f603b0c499dd795f4424a7b7, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Past Click
+  m_Volume: 0
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 0
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: 0, y: 0}
+  m_AutomaticTriggerTimeRandomizationRange: {x: 0, y: 0}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: 1310479030693956250}
+  - {fileID: -1345056500102150995}
+  - {fileID: 5287502997576392783}
+  - {fileID: 5064499051008824255}
+  - {fileID: -6444725494768329081}
+  - {fileID: -8293228773599623540}
+  m_AvoidRepeatingLast: 0
+  m_PlaybackMode: 2
+  m_TriggerMode: 1
+  m_AutomaticTriggerMode: 1
+  m_LoopMode: 1
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 0
+  m_AutomaticTriggerTimeRandomizationEnabled: 0
+  m_LoopCountRandomizationEnabled: 0
