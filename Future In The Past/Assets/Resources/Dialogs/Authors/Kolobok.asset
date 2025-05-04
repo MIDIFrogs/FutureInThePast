@@ -15,4 +15,4 @@ MonoBehaviour:
   id: 1
   authorName: "\u041A\u043E\u043B\u043E\u0431\u043E\u043A"
   signColor: {r: 0.7924528, g: 0.48842514, b: 0.0710217, a: 1}
-  avatar: {fileID: 7563527049551548106, guid: 402b9f2fd477ab2459bea5b1fcea8b50, type: 3}
+  avatar: {fileID: 21300000, guid: c02aa622d47ffaa4e8eb07ab1878f69d, type: 3}

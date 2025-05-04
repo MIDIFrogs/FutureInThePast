@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Threading.Tasks;
+using MIDIFrogs.FutureInThePast.Navigation;
 using MIDIFrogs.FutureInThePast.Quests;
 using UnityEngine;
 
@@ -14,6 +15,9 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [SerializeField] private bool autoplay;
         [SerializeField] private DialogFrame dialogFrame;
         [SerializeField] private ResponseFrame responseFrame;
+
+        [Header("Navigation")]
+        [SerializeField] private SimpleNavigator endgameNavigator;
 
         [Header("Debug options")]
         [SerializeField] private Dialog startupDialog;
@@ -66,7 +70,12 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
                             responseFrame.gameObject.SetActive(true);
                             var response = await responseFrame.WaitForResponse(currentClip);
                             responseFrame.gameObject.SetActive(false);
-                            response.SelectionTrigger.IsCompleted = response.ShouldSetTrigger;
+                            if (response.SelectionTrigger != null)
+                                response.SelectionTrigger.IsCompleted = response.ShouldSetTrigger;
+                            if (response.EndsGame)
+                            {
+                                endgameNavigator.Navigate();
+                            }
                             currentClip = response.Continuation;
                         }
                         else

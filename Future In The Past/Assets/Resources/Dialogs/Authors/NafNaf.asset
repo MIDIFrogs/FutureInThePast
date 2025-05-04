@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8682ad4798870e2458891849c874b551, type: 3}
   m_Name: NafNaf
   m_EditorClassIdentifier: 
-  id: 
-  authorName: 
-  signColor: {r: 0, g: 0, b: 0, a: 0}
-  avatar: {fileID: 0}
+  id: 11
+  authorName: "\u041D\u0430\u0444-\u043D\u0430\u0444"
+  signColor: {r: 0.7075472, g: 0.41051087, b: 0.6267994, a: 1}
+  avatar: {fileID: -6314073394457431053, guid: 61d756a96531892448550e0b25dff3c5, type: 3}

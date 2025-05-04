@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: NsfwHat
   m_EditorClassIdentifier: 
   id: 4
-  authorName: "\u041F\u0440\u0435\u043A\u0440\u0430\u0441\u043D\u0430\u044F \u0448\u0430\u043F\u043E\u0447\u043A\u0430"
+  authorName: "\u041A\u0440\u0430\u0441\u043D\u0430\u044F \u0448\u043B\u044F\u043F\u043E\u0447\u043A\u0430"
   signColor: {r: 1, g: 0, b: 0.6787672, a: 1}
-  avatar: {fileID: -6474192726034587501, guid: 8919b11872b859747b51719331f5d0ce, type: 3}
+  avatar: {fileID: 21300000, guid: 657f84155e2787a4a83b920cc06d3a4a, type: 3}
