@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tremble_frame0002_0: 7501847744616009095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

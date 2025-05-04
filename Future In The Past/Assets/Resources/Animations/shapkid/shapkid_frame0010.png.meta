@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shapkid_frame0010_0: 5948900519259753695
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

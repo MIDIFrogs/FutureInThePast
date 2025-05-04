@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      kolobok_frame0002_0: -1160676711454096552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

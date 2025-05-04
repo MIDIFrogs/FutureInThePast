@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      wolf_idle_frame0009_0: 3790780004740410247
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
