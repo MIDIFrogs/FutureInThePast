@@ -27,7 +27,7 @@ namespace MIDIFrogs.FutureInThePast.Quests
 
         public static void ResetTrigger(QuestTrigger trigger)
         {
-            Debug.Log($"Trigger {trigger.Tag} is set.");
+            Debug.Log($"Trigger {trigger.Tag} is unset.");
             trigger.IsCompleted = false;
         }
 

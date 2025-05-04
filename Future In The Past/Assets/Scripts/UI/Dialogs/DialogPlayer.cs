@@ -66,7 +66,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
                             responseFrame.gameObject.SetActive(true);
                             var response = await responseFrame.WaitForResponse(currentClip);
                             responseFrame.gameObject.SetActive(false);
-                            QuestManager.SetTrigger(response.SelectionTrigger);
+                            response.SelectionTrigger.IsCompleted = response.ShouldSetTrigger;
                             currentClip = response.Continuation;
                         }
                         else

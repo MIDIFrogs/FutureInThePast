@@ -9,6 +9,7 @@ namespace MIDIFrogs.FutureInThePast
         [SerializeField] private SimpleNavigator endingNavigator;
         [SerializeField] private int maxHp;
         [SerializeField] private Transform initialCheckpoint;
+        [SerializeField] private TriggerConfig deathTrigger;
 
         private Transform lastCheckpoint;
 
@@ -18,6 +19,7 @@ namespace MIDIFrogs.FutureInThePast
         {
             Health = maxHp;
             lastCheckpoint = initialCheckpoint;
+            deathTrigger.Quest.Completed += (s, e) => Kill();
         }
 
         public void Hit()
