@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 55303807ca313ff45bcb6d541388b9bc
+guid: 78006c4c3e20bec42bf3c5227bb2bbe3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2720535173406242035
-    second: 23_0
+      213: 2555875495411987118
+    second: dirka ib nora_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 23_0
+      name: dirka ib nora_0
       rect:
         serializedVersion: 2
-        x: 113
-        y: 145
-        width: 802
-        height: 799
+        x: 88
+        y: 47
+        width: 78
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3f4b5d1835841c520800000000000000
-      internalID: 2720535173406242035
+      spriteID: ea23822b83b487320800000000000000
+      internalID: 2555875495411987118
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      23_0: 2720535173406242035
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
