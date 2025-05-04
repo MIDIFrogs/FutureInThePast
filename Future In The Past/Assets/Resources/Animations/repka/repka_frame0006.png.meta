@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      repka_frame0006_0: 9181624108538351901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

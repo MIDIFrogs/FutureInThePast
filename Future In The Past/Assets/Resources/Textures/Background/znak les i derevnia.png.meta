@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      znak les i derevnia_0: 3374249558699489135
+      znak les i derevnia_1: -3543608322282372036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

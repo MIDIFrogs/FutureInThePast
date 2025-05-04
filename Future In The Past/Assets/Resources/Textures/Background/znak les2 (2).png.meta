@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      znak les2 (2)_0: -1774356799645349235
+      znak les2 (2)_1: 3571972228665275270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
