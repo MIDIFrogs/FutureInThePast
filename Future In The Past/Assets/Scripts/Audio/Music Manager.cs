@@ -2,8 +2,6 @@ using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast
 {
-    using UnityEngine;
-
     public class MusicManager : MonoBehaviour
     {
         public enum LocationType
@@ -13,19 +11,22 @@ namespace MIDIFrogs.FutureInThePast
             Forest
         }
 
+        public GameObject player;
+
         [System.Serializable]
         public class Transition
         {
-            public AudioClip sound; 
-            public LocationType currentLocation; 
-            public LocationType nextLocation; 
+            public AudioClip sound;
+            public LocationType currentLocation;
+            public LocationType nextLocation;
         }
 
         [System.Serializable]
         public class Track
         {
-            public AudioClip music; 
-            public Transition transition1; 
+            public AudioClip music; // Обычная версия
+            public AudioClip alternativeMusic; // Альтернативная версия
+            public Transition transition1;
             public Transition transition2;
         }
 
@@ -36,26 +37,29 @@ namespace MIDIFrogs.FutureInThePast
             [HideInInspector] public Vector2 bottomLeft;
             public GameObject topRightObj;
             [HideInInspector] public Vector2 topRight;
-            public Track track; 
-            public LocationType locationType; 
+            public Track track;
+            public LocationType locationType;
+            public bool visited; // Поле для отслеживания посещенности
         }
 
-        public Location[] locations; 
-        private Track currentTrack; 
-        private Track newTrack; 
-        private AudioSource audioSource; 
+        public Location[] locations;
+        private Track currentTrack;
+        private Track newTrack;
+        private AudioSource audioSource;
+        private bool isTransitioning = false;
 
         void Start()
         {
             audioSource = gameObject.AddComponent<AudioSource>();
             InitializeTracks();
-            currentTrack = locations[0].track; 
+            currentTrack = locations[0].track;
             PlayMusic(currentTrack);
         }
 
         void Update()
         {
             CheckPlayerLocation();
+            CheckMusicEnd();
         }
 
         void InitializeTracks()
@@ -65,7 +69,7 @@ namespace MIDIFrogs.FutureInThePast
 
         void CheckPlayerLocation()
         {
-            Vector2 playerPosition = transform.position; 
+            Vector2 playerPosition = player.transform.position;
 
             foreach (var location in locations)
             {
@@ -74,12 +78,23 @@ namespace MIDIFrogs.FutureInThePast
                 if (playerPosition.x >= location.bottomLeft.x && playerPosition.x <= location.topRight.x &&
                     playerPosition.y >= location.bottomLeft.y && playerPosition.y <= location.topRight.y)
                 {
-                    newTrack = location.track; 
+                    newTrack = location.track;
 
-                    if (newTrack != currentTrack)
+                    if (newTrack != currentTrack && !isTransitioning && !audioSource.isPlaying)
                     {
                         PlayTransition(currentTrack, newTrack, location);
                         currentTrack = newTrack;
+                    }
+
+                    // Проверяем, посещалась ли локация
+                    if (!location.visited)
+                    {
+                        location.visited = true; // Отмечаем локацию как посещенную
+                        PlayMusic(newTrack); // Играем обычную версию
+                    }
+                    else
+                    {
+                        PlayAlternativeMusic(newTrack); // Играем альтернативную версию
                     }
                     break;
                 }
@@ -90,6 +105,14 @@ namespace MIDIFrogs.FutureInThePast
         {
             audioSource.clip = track.music;
             audioSource.Play();
+            Debug.Log($"Playing music: {track.music.name}");
+        }
+
+        void PlayAlternativeMusic(Track track)
+        {
+            audioSource.clip = track.alternativeMusic;
+            audioSource.Play();
+            Debug.Log($"Playing alternative music: {track.alternativeMusic.name}");
         }
 
         void PlayTransition(Track oldTrack, Track newTrack, Location location)
@@ -100,6 +123,8 @@ namespace MIDIFrogs.FutureInThePast
                 audioSource.Stop();
                 audioSource.clip = transition.sound;
                 audioSource.Play();
+                isTransitioning = true;
+                Debug.Log($"Playing transition from {oldTrack.music.name} to {newTrack.music.name}");
                 Invoke("PlayNewMusic", audioSource.clip.length);
             }
         }
@@ -117,7 +142,16 @@ namespace MIDIFrogs.FutureInThePast
         void PlayNewMusic()
         {
             PlayMusic(currentTrack);
+            isTransitioning = false;
+            Debug.Log($"Now playing: {currentTrack.music.name}");
+        }
+
+        void CheckMusicEnd()
+        {
+            if (!audioSource.isPlaying && !isTransitioning)
+            {
+                PlayMusic(currentTrack);
+            }
         }
     }
-
 }
