@@ -7,8 +7,7 @@ namespace MIDIFrogs.FutureInThePast.UI
 	public class SoundModeSwitcher : MonoBehaviour
 	{
         [SerializeField] private AudioMixer mixer;
-
-        private bool isFutureMode = true;
+        [SerializeField] private bool isFutureMode = true;
 
         public void Awake()
         {

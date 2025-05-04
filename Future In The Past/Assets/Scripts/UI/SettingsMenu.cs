@@ -25,7 +25,7 @@ namespace MIDIFrogs.FutureInThePast
 
         private void Start()
         {
-            supportedResolutions = new List<Resolution>(Screen.resolutions);
+            supportedResolutions = new List<Resolution>(Screen.resolutions.OrderBy(x => x.width * x.height));
             RestoreSettings();
             ApplySettings();
 
