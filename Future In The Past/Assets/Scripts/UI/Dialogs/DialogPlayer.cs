@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using MIDIFrogs.FutureInThePast.Navigation;
 using MIDIFrogs.FutureInThePast.Quests;
 using UnityEngine;
@@ -26,14 +26,12 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
 
         public bool Autoplay => autoplay;
 
-        public Task CurrentDialogTask { get; private set; }
-
-        private void Start()
+        private async void Start()
         {
             QuestManager.Initialize();
             if (startupDialog != null)
             {
-                CurrentDialogTask = StartDialogAsync(startupDialog);
+                await StartDialogAsync(startupDialog);
             }
         }
 
@@ -41,16 +39,16 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         /// Starts a dialog without waiting for the completion
         /// </summary>
         /// <param name="dialog">Dialog to read.</param>
-        public void StartDialog(Dialog dialog)
+        public async void StartDialog(Dialog dialog)
         {
-            CurrentDialogTask = StartDialogAsync(dialog);
+            await StartDialogAsync(dialog);
         }
 
         /// <summary>
         /// Starts a dialog and waits for the completion.
         /// </summary>
         /// <param name="dialog">Dialog to read.</param>
-        public async Task StartDialogAsync(Dialog dialog)
+        public async UniTask StartDialogAsync(Dialog dialog)
         {
             try
             {

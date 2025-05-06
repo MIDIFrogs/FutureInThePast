@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using MIDIFrogs.FutureInThePast.UI.DialogSystem;
 using UnityEngine;
 
@@ -9,9 +10,9 @@ namespace MIDIFrogs.FutureInThePast
         [SerializeField] private DialogPlayer player;
         [SerializeField] private Dialog dialogToPlay;
 
-        protected virtual void Start()
+        protected virtual async void Start()
         {
-            player.StartDialog(dialogToPlay);
+            await player.StartDialogAsync(dialogToPlay);
         }
     }
 }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Cysharp.Threading.Tasks;
 using MIDIFrogs.FutureInThePast.Navigation;
 using MIDIFrogs.FutureInThePast.UI.DialogSystem;
 using UnityEngine;
@@ -17,7 +18,7 @@ namespace MIDIFrogs.FutureInThePast.Quests
         [SerializeField] private DialogPlayer dialogPlayer;
         [SerializeField] private SimpleNavigator backNavigator;
 
-        private void Start()
+        private async void Start()
         {
             Dialog selectedDialog = null;
             foreach (var ending in endings.OrderByDescending(x => x.Triggers.Count))
@@ -28,17 +29,7 @@ namespace MIDIFrogs.FutureInThePast.Quests
                 }
             }
             Debug.Log($"Selected dialog {selectedDialog.name}");
-            dialogPlayer.StartDialog(selectedDialog);
-            StartCoroutine(WaitForDialogs());
-        }
-
-        private IEnumerator WaitForDialogs()
-        {
-            while (!dialogPlayer.CurrentDialogTask.IsCompleted)
-            {
-                yield return new WaitForEndOfFrame();
-            }
-            backNavigator.Navigate();
+            await dialogPlayer.StartDialogAsync(selectedDialog);
         }
     }
 

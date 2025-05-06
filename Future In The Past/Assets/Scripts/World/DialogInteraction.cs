@@ -11,11 +11,11 @@ namespace MIDIFrogs.FutureInThePast
         [SerializeField] private bool canRepeat = false;
         private bool isPlayed = false;
 
-        public override void OnInteract()
+        public override async void OnInteract()
         {
             if (!isPlayed || canRepeat)
             {
-                player.StartDialog(dialogToPlay);
+                await player.StartDialogAsync(dialogToPlay);
                 isPlayed = true;
             }
         }

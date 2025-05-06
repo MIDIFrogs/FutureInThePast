@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using System.Threading;
 using System;
 
@@ -16,11 +16,11 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [SerializeField] private Image splash;
         [SerializeField] private Image oldSplash;
 
-        private TaskCompletionSource<bool> waitButton;
+        private UniTaskCompletionSource<bool> waitButton;
 
         public void OnNextFrame()
         {
-            waitButton?.SetResult(true);
+            waitButton?.TrySetResult(true);
         }
 
         private void Update()
@@ -37,29 +37,31 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         /// <param name="text">Text to write.</param>
         /// <param name="textSpeed">Text speed to speed up or slow down the reading.</param>
         /// <param name="token">Token to cancel an animation.</param>
-        public async Task AnimationReplic(string text, float textSpeed, CancellationToken token)
+        public async UniTask AnimationReplic(string text, float textSpeed, CancellationToken token)
         {
+            Debug.Log($"AnimationReplic started, working with {textSpeed}.");
             for (int i = 0; i <= text.Length; i++)
             {
                 token.ThrowIfCancellationRequested();
                 replicText.text = text[..i];
-                await Task.Delay(TimeSpan.FromMilliseconds(40) / textSpeed);
+                await UniTask.Delay(TimeSpan.FromMilliseconds(40) / textSpeed, true, cancellationToken: token);
             }
+            Debug.Log("AnimationReplic completed");
 
             // Assuming each 100 characters in text should be read in 1.5 seconds.
             float textReadCoefficient = text.Length / 100f;
             // For autoplay to read after text
-            await Task.Delay(TimeSpan.FromSeconds(1.5) * textReadCoefficient);
+            await UniTask.Delay(TimeSpan.FromSeconds(1.5) * textReadCoefficient, cancellationToken: token);
         }
 
-        public async Task AnimateImage(Image image, float fromAlpha, float toAlpha, float speed, CancellationToken token)
+        public async UniTask AnimateImage(Image image, float fromAlpha, float toAlpha, float speed, CancellationToken token)
         {
             for (int i = 0; i < 100; i++)
             {
                 token.ThrowIfCancellationRequested();
                 float alpha = Mathf.Lerp(fromAlpha, toAlpha, i / 100f);
                 image.color = new(1, 1, 1, alpha);
-                await Task.Delay(TimeSpan.FromMilliseconds(3) / speed);
+                await UniTask.Delay(TimeSpan.FromMilliseconds(3) / speed, true, cancellationToken: token);
             }
         }
 
@@ -69,7 +71,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         /// <param name="replic">Replic to show.</param>
         /// <param name="textSpeed">Reading speed coefficient for the text.</param>
         /// <param name="autoplay">Set to <see langword="true"/> if the replic should be autoplayed.</param>
-        public async Task ShowText(Replic replic, float textSpeed, bool autoplay)
+        public async UniTask ShowText(Replic replic, float textSpeed, bool autoplay)
         {
             // Prepare the token to cancel the animation.
             CancellationTokenSource cancelPreTask = new();
@@ -86,7 +88,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
             authorName.text = replic.Author.Name;
             authorAvatar.sprite = replic.Author.Avatar;
             authorName.color = replic.Author.SignColor;
-            Task fadeOut = Task.CompletedTask, fadeIn = Task.CompletedTask;
+            UniTask fadeOut = UniTask.CompletedTask, fadeIn = UniTask.CompletedTask;
             // Animate splash screens
             oldSplash.sprite = splash.sprite;
             splash.sprite = replic.FrameSplash;
@@ -121,7 +123,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
 
             if (autoplay)
             {
-                await Task.WhenAny(Task.WhenAll(animation, fadeIn, fadeOut), waitButton.Task);
+                await UniTask.WhenAny(UniTask.WhenAll(animation, fadeIn, fadeOut), waitButton.Task);
             }
             else
             {

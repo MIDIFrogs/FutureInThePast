@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Linq;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using MIDIFrogs.FutureInThePast.Quests;
 using TMPro;
 using UnityEngine;
@@ -18,10 +18,10 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [SerializeField] private TMP_Text RequirementsText;
         [SerializeField] private Button button;
 
-        private TaskCompletionSource<bool> clickTcs = new();
+        private UniTaskCompletionSource<bool> clickTcs = new();
 
 
-        public async Task WaitForClick(Response response)
+        public async UniTask WaitForClick(Response response)
         {
             responseText.text = response.Text;
             Debug.Log($"Found requirements: {string.Join(',', response.Requirements.Select(x => x.Tag + ":" + x.IsCompleted))}");
@@ -39,7 +39,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
 
         public void Click()
         {
-            clickTcs.SetResult(true);
+            clickTcs.TrySetResult(true);
         }
     }
 }

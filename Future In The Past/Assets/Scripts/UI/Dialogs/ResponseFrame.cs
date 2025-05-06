@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using MIDIFrogs.FutureInThePast.Quests;
 using TMPro;
 using UnityEngine;
@@ -19,7 +19,7 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [SerializeField] private GameObject responsePanel;
         [SerializeField] private TMP_Text questionText;
 
-        public async Task<Response> WaitForResponse(DialogClip clip)
+        public async UniTask<Response> WaitForResponse(DialogClip clip)
         {
             questionText.text = clip.EndQuestion;
             foreach (Transform child in historyViewport)
@@ -35,14 +35,13 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
             {
                 Destroy(child.gameObject);
             }
-            List<Task> buttonTasks = new();
+            List<UniTask> buttonTasks = new();
             foreach (var response in clip.Responses)
             {
                 var button = Instantiate(responsePrefab, responsePanel.transform);
                 buttonTasks.Add(button.WaitForClick(response));
             }
-            var clicked = await Task.WhenAny(buttonTasks);
-            int selectedButton = buttonTasks.IndexOf(clicked);
+            int selectedButton = await UniTask.WhenAny(buttonTasks);
             Debug.Log($"Selected button index: {selectedButton}");
             return clip.Responses.ElementAt(selectedButton);
         }
