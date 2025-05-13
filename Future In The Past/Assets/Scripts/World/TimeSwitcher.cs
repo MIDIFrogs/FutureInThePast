@@ -23,10 +23,22 @@ namespace MIDIFrogs.FutureInThePast
             }
         }
 
+        private void LateUpdate()
+        {
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                SwitchTime();
+            }
+        }
+
         public void SwitchTime()
         {
-            if (!timeObservers.All(x => x.CanSwitchTime()))
+            bool canSwitch = timeObservers.All(x => x.CanSwitchTime());
+            if (!canSwitch)
+            {
+                Debug.Log("Couldn't switch because some observers are not ready.");
                 return;
+            }
 
             foreach (var observer in timeObservers)
             {

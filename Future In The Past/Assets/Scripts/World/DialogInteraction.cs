@@ -1,4 +1,5 @@
-using MIDIFrogs.FutureInThePast.UI.DialogSystem;
+using MIDIFrogs.FutureInThePast.Quests.Dialogs;
+using MIDIFrogs.FutureInThePast.UI.Dialogs;
 using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast

@@ -15,5 +15,5 @@ MonoBehaviour:
   id: 8
   authorName: "\u0412\u043E\u043B\u0447\u0438\u0449\u0435 \u0421\u0435\u0440\u044B\u0439
     \u0411\u043E\u0447\u0438\u0449\u0435"
-  signColor: {r: 0.2735849, g: 0.2735849, b: 0.2735849, a: 1}
+  signColor: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
   avatar: {fileID: 21300000, guid: d206a74b85b50824f89cfff3b24b1943, type: 3}

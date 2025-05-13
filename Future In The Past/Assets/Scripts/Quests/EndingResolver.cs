@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Cysharp.Threading.Tasks;
 using MIDIFrogs.FutureInThePast.Navigation;
-using MIDIFrogs.FutureInThePast.UI.DialogSystem;
+using MIDIFrogs.FutureInThePast.Quests.Dialogs;
+using MIDIFrogs.FutureInThePast.UI.Dialogs;
 using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast.Quests

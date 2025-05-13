@@ -1,66 +1,64 @@
-using System.Collections;
 using UnityEngine;
+using Cysharp.Threading.Tasks;
+using MIDIFrogs.FutureInThePast;
 
-public class ScreenManager : MonoBehaviour
+public class ScreenManager : TimeChangeObserver
 {
-    public GameObject screen1; 
-    public GameObject screen2; 
+    public GameObject futureScreen;
+    public GameObject pastScreen;
     public float transitionTime = 1.0f;
-    [SerializeField] private bool switchOnAwake;
 
-    private bool suppressSwitch;
-
-    private void Awake()
-    {
-        if (switchOnAwake)
-            StartCoroutine(SwitchScreens());
-    }
+    private bool isEnabling;
+    private bool isDisabling;
 
     private void Start()
     {
-        screen2.transform.position = new Vector3(screen2.transform.position.x, screen2.transform.position.y, 1);
-        SetAlpha(screen2, 0);
+        pastScreen.transform.position = new Vector3(pastScreen.transform.position.x, pastScreen.transform.position.y, 1);
+        SetAlpha(pastScreen, 0);
     }
 
-    private void Update()
+    public override bool CanSwitchTime() => !isEnabling && !isDisabling;
+
+    public override void OnEnterFuture() => FadeIn(futureScreen).Forget();
+
+    public override void OnEnterPast() => FadeIn(pastScreen).Forget();
+
+    public override void OnLeaveFuture() => FadeOut(futureScreen).Forget();
+
+    public override void OnLeavePast() => FadeOut(pastScreen).Forget();
+    
+    private async UniTaskVoid FadeOut(GameObject obj)
     {
-        if (Input.GetKeyDown(KeyCode.X) && !suppressSwitch)
-        {
-            StartCoroutine(SwitchScreens());
-        }
-    }
-
-    private IEnumerator SwitchScreens()
-    {
-        suppressSwitch = true;
-        GameObject currentScreen = screen1.activeSelf ? screen1 : screen2;
-        GameObject nextScreen = currentScreen == screen1 ? screen2 : screen1;
-
-        nextScreen.SetActive(true);
-
+        isDisabling = true;
         float elapsedTime = 0;
         while (elapsedTime < transitionTime)
         {
             float t = elapsedTime / transitionTime;
-            SetAlpha(currentScreen, Mathf.Lerp(1, 0, t)); 
+            SetAlpha(obj, Mathf.Lerp(1, 0, t));
             elapsedTime += Time.deltaTime;
-            yield return null;
+            await UniTask.Yield();
         }
 
-        SetAlpha(currentScreen, 0);
-        currentScreen.SetActive(false); 
+        SetAlpha(obj, 0);
+        obj.SetActive(false);
+        isDisabling = false;
+    }
 
-        elapsedTime = 0;
+    private async UniTaskVoid FadeIn(GameObject obj)
+    {
+        isEnabling = true;
+        obj.SetActive(true);
+        float elapsedTime = 0;
         while (elapsedTime < transitionTime)
         {
             float t = elapsedTime / transitionTime;
-            SetAlpha(nextScreen, Mathf.Lerp(0, 1, t)); 
+            SetAlpha(obj, Mathf.Lerp(0, 1, t));
             elapsedTime += Time.deltaTime;
-            yield return null;
+            await UniTask.Yield();
         }
 
-        SetAlpha(nextScreen, 1);
-        suppressSwitch = false;
+        SetAlpha(obj, 1);
+        isEnabling = false;
     }
 
     private void SetAlpha(GameObject obj, float alpha)

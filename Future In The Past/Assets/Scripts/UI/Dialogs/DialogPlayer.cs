@@ -1,10 +1,13 @@
 using System.Collections;
+using System.Collections.Generic;
+using Codice.CM.Common;
 using Cysharp.Threading.Tasks;
 using MIDIFrogs.FutureInThePast.Navigation;
 using MIDIFrogs.FutureInThePast.Quests;
+using MIDIFrogs.FutureInThePast.Quests.Dialogs;
 using UnityEngine;
 
-namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
+namespace MIDIFrogs.FutureInThePast.UI.Dialogs
 {
     public class DialogPlayer : MonoBehaviour
     {
@@ -14,10 +17,6 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         [SerializeField] private float textSpeed;
         [SerializeField] private bool autoplay;
         [SerializeField] private DialogFrame dialogFrame;
-        [SerializeField] private ResponseFrame responseFrame;
-
-        [Header("Navigation")]
-        [SerializeField] private SimpleNavigator endgameNavigator;
 
         [Header("Debug options")]
         [SerializeField] private Dialog startupDialog;
@@ -50,45 +49,40 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         /// <param name="dialog">Dialog to read.</param>
         public async UniTask StartDialogAsync(Dialog dialog)
         {
+            pauseMenu.IsPaused = true;
+
+            List<DialogLine> history = new();
+
+            var currentLine = dialog.StartLine;
+            dialogFrame.gameObject.SetActive(true);
+
             try
             {
-                pauseMenu.IsPaused = true;
-
-                foreach (var clip in dialog.Clips)
+                while (currentLine != null)
                 {
-                    var currentClip = clip;
-                    while (currentClip != null)
+                    history.Add(currentLine);
+                    var response = await dialogFrame.ShowText(currentLine, history, TextSpeed, Autoplay);
+                    if (currentLine.Responses.Count > 0 && response != null)
                     {
-                        dialogFrame.gameObject.SetActive(true);
-                        foreach (var replic in currentClip.Replics)
-                            await dialogFrame.ShowText(replic, TextSpeed, Autoplay);
-                        dialogFrame.gameObject.SetActive(false);
-                        if (currentClip.Responses.Count > 0)
-                        {
-                            responseFrame.gameObject.SetActive(true);
-                            var response = await responseFrame.WaitForResponse(currentClip);
-                            responseFrame.gameObject.SetActive(false);
-                            if (response.SelectionTrigger != null)
-                                response.SelectionTrigger.IsCompleted = response.ShouldSetTrigger;
-                            if (response.EndsGame)
-                            {
-                                endgameNavigator.Navigate();
-                            }
-                            currentClip = response.Continuation;
-                        }
-                        else
-                        {
-                            currentClip = null;
-                        }
+                        if (response.Trigger != null && response.Trigger.Quest != null)
+                            response.Trigger.Quest.IsCompleted = true;
+                        currentLine = response.Continuation;
+                    }
+                    else
+                    {
+                        currentLine = null;
                     }
                 }
-                
-                pauseMenu.IsPaused = false;
             }
             catch (System.Exception ex)
             {
                 Debug.Log(ex);
                 Debug.LogErrorFormat("An error encountered while running a dialog. Exception details: {0}", ex.Message);
+            }
+            finally
+            {
+                dialogFrame.gameObject.SetActive(false);
+                pauseMenu.IsPaused = false;
             }
         }
     }

@@ -6,17 +6,14 @@ namespace MIDIFrogs.FutureInThePast.Quests
     [Serializable]
     public class QuestTrigger
     {
-        public string tag;
-        [SerializeField] private string description;
-
         private bool isCompleted;
         
         public event EventHandler Completed;
 
         public event EventHandler Restored;
 
-        public string Tag => tag;
-        public string Description => description;
+        [field: SerializeField] public string Tag { get; [Obsolete("For editor only")] set; }
+        [field: SerializeField] public string Description { get; }
 
         public bool IsCompleted 
         {

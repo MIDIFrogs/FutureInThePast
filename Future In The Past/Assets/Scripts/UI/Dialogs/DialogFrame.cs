@@ -4,17 +4,28 @@ using UnityEngine.UI;
 using Cysharp.Threading.Tasks;
 using System.Threading;
 using System;
+using MIDIFrogs.FutureInThePast.Quests.Dialogs;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
+namespace MIDIFrogs.FutureInThePast.UI.Dialogs
 {
     public class DialogFrame : MonoBehaviour
     {
-        [SerializeField] private TMP_Text replicText;
+        [Header("Dialog properties")]
+        [SerializeField] private TMP_Text lineText;
         [SerializeField] private TMP_Text authorName;
         [SerializeField] private Image authorAvatar;
         [SerializeField] private AudioSource voiceOver;
         [SerializeField] private Image splash;
         [SerializeField] private Image oldSplash;
+
+        [Header("Response properties")]
+        [SerializeField] private DialogHistoryEntry historyEntryPrefab;
+        [SerializeField] private GameObject historyPanel;
+        [SerializeField] private RectTransform historyViewport;
+        [SerializeField] private ResponseButton responsePrefab;
+        [SerializeField] private GameObject responsePanel;
 
         private UniTaskCompletionSource<bool> waitButton;
 
@@ -37,16 +48,16 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         /// <param name="text">Text to write.</param>
         /// <param name="textSpeed">Text speed to speed up or slow down the reading.</param>
         /// <param name="token">Token to cancel an animation.</param>
-        public async UniTask AnimationReplic(string text, float textSpeed, CancellationToken token)
+        public async UniTask AnimationLine(string text, float textSpeed, CancellationToken token)
         {
-            Debug.Log($"AnimationReplic started, working with {textSpeed}.");
+            Debug.Log($"AnimationLine started, working with {textSpeed}.");
             for (int i = 0; i <= text.Length; i++)
             {
                 token.ThrowIfCancellationRequested();
-                replicText.text = text[..i];
+                lineText.text = text[..i];
                 await UniTask.Delay(TimeSpan.FromMilliseconds(40) / textSpeed, true, cancellationToken: token);
             }
-            Debug.Log("AnimationReplic completed");
+            Debug.Log("AnimationLine completed");
 
             // Assuming each 100 characters in text should be read in 1.5 seconds.
             float textReadCoefficient = text.Length / 100f;
@@ -66,32 +77,32 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         }
 
         /// <summary>
-        /// Shows the replic in the dialog frame.
+        /// Shows the line in the dialog frame.
         /// </summary>
-        /// <param name="replic">Replic to show.</param>
+        /// <param name="line">Line to show.</param>
         /// <param name="textSpeed">Reading speed coefficient for the text.</param>
-        /// <param name="autoplay">Set to <see langword="true"/> if the replic should be autoplayed.</param>
-        public async UniTask ShowText(Replic replic, float textSpeed, bool autoplay)
+        /// <param name="autoplay">Set to <see langword="true"/> if the line should be autoplayed.</param>
+        public async UniTask<Response> ShowText(DialogLine line, List<DialogLine> history, float textSpeed, bool autoplay)
         {
             // Prepare the token to cancel the animation.
             CancellationTokenSource cancelPreTask = new();
 
             voiceOver.clip = null;
             // Fill up the frame data
-            if (replic.Voice != null)
+            if (line.Voice != null)
             {
-                voiceOver.clip = replic.Voice;
+                voiceOver.clip = line.Voice;
                 voiceOver.Play();
             }
-            replicText.fontStyle = replic.FontStyle;
-            var animation = AnimationReplic(replic.Message, textSpeed, cancelPreTask.Token);
-            authorName.text = replic.Author.Name;
-            authorAvatar.sprite = replic.Author.Avatar;
-            authorName.color = replic.Author.SignColor;
+            lineText.fontStyle = line.FontStyle;
+            var animation = AnimationLine(line.Message, textSpeed, cancelPreTask.Token);
+            authorName.text = line.Author.Name;
+            authorAvatar.sprite = line.Author.Avatar;
+            authorName.color = line.Author.SignColor;
             UniTask fadeOut = UniTask.CompletedTask, fadeIn = UniTask.CompletedTask;
             // Animate splash screens
             oldSplash.sprite = splash.sprite;
-            splash.sprite = replic.FrameSplash;
+            splash.sprite = line.FrameSplash;
 
             if (splash.sprite != null)
             {
@@ -116,26 +127,51 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
                 }
             }
 
-
-
-            // Wait for the button click
-            waitButton = new();
-
-            if (autoplay)
+            foreach (Transform child in historyViewport)
             {
-                await UniTask.WhenAny(UniTask.WhenAll(animation, fadeIn, fadeOut), waitButton.Task);
+                Destroy(child.gameObject);
             }
-            else
+            foreach (var histLine in history)
             {
-                await waitButton.Task;
+                var lineEntry = Instantiate(historyEntryPrefab, historyViewport);
+                lineEntry.PlaceLine(histLine);
+            }
+            foreach (Transform child in responsePanel.transform)
+            {
+                Destroy(child.gameObject);
+            }
+            List<UniTask> buttonTasks = new();
+            foreach (var response in line.Responses)
+            {
+                var button = Instantiate(responsePrefab, responsePanel.transform);
+                buttonTasks.Add(button.WaitForClick(response));
+            }
+            if (!buttonTasks.Any())
+            {
+                // Wait for the button click
+                waitButton = new();
+
+                if (autoplay)
+                {
+                    await UniTask.WhenAny(UniTask.WhenAll(animation, fadeIn, fadeOut), waitButton.Task);
+                }
+                else
+                {
+                    await waitButton.Task;
+                }
             }
 
-            // Cancel incompleted animations
+            int selectedButton = await UniTask.WhenAny(buttonTasks);
+            Debug.Log($"Selected button index: {selectedButton}");
+
+            // Cancel incomplete animations
             cancelPreTask.Cancel();
-            if (replic.Voice != null)
+            if (line.Voice != null)
             {
                 voiceOver.Stop();
             }
+
+            return line.Responses.ElementAtOrDefault(selectedButton);
         }
     }
 }

@@ -16,7 +16,9 @@ namespace MIDIFrogs.FutureInThePast.Quests
         {
             if (string.IsNullOrWhiteSpace(trigger.Tag))
             {
-                trigger.tag = name;
+#pragma warning disable CS0618
+                trigger.Tag = name;
+#pragma warning restore
             }
         }
     }

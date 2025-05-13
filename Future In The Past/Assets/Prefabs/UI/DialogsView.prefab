@@ -373,12 +373,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06d4f5c76e4cfbf498b0d8b7f89d2480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replicText: {fileID: 8698175145627693051}
+  lineText: {fileID: 8698175145627693051}
   authorName: {fileID: 4857158725170399685}
   authorAvatar: {fileID: 4852047513582272140}
   voiceOver: {fileID: 4151425970584303785}
   splash: {fileID: 1477765971943900246}
   oldSplash: {fileID: 3523206891846510984}
+  historyEntryPrefab: {fileID: 0}
+  historyPanel: {fileID: 0}
+  historyViewport: {fileID: 0}
+  responsePrefab: {fileID: 0}
+  responsePanel: {fileID: 0}
 --- !u!1 &5355292094786029743
 GameObject:
   m_ObjectHideFlags: 0

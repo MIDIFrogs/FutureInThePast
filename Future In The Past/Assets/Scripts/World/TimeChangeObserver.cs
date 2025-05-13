@@ -6,9 +6,9 @@ namespace MIDIFrogs.FutureInThePast
     {
         public virtual bool CanSwitchTime() => true;
         public virtual void OnTimeChanges() { }
-        public virtual void OnEnterFuture() => OnTimeChanges();
-        public virtual void OnEnterPast() => OnTimeChanges();
-        public virtual void OnLeaveFuture() => OnTimeChanges();
-        public virtual void OnLeavePast() => OnTimeChanges();
+        public virtual void OnEnterFuture() { }
+        public virtual void OnEnterPast() { }
+        public virtual void OnLeaveFuture() { }
+        public virtual void OnLeavePast() { }
     }
 }

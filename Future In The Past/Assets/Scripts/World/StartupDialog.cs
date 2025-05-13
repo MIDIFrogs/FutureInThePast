@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
-using MIDIFrogs.FutureInThePast.UI.DialogSystem;
+using MIDIFrogs.FutureInThePast.UI.Dialogs;
+using MIDIFrogs.FutureInThePast.Quests.Dialogs;
 using UnityEngine;
 
 namespace MIDIFrogs.FutureInThePast

@@ -1,13 +1,12 @@
 using System;
-using System.Collections;
 using System.Linq;
 using Cysharp.Threading.Tasks;
-using MIDIFrogs.FutureInThePast.Quests;
+using MIDIFrogs.FutureInThePast.Quests.Dialogs;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
+namespace MIDIFrogs.FutureInThePast.UI.Dialogs
 {
     public class ResponseButton : MonoBehaviour
     {
@@ -24,11 +23,11 @@ namespace MIDIFrogs.FutureInThePast.UI.DialogSystem
         public async UniTask WaitForClick(Response response)
         {
             responseText.text = response.Text;
-            Debug.Log($"Found requirements: {string.Join(',', response.Requirements.Select(x => x.Tag + ":" + x.IsCompleted))}");
-            button.interactable = response.Requirements.All(x => x.IsCompleted);
+            Debug.Log($"Found requirements: {string.Join(',', response.Requirements.Select(x => x.Quest.Tag + ":" + x.Quest.IsCompleted))}");
+            button.interactable = response.Requirements.All(x => x.Quest.IsCompleted);
             if (!button.interactable)
             {
-                RequirementsText.text = requirementsLabel + string.Join(Environment.NewLine, response.Requirements.Where(x => !x.IsCompleted).Select(x => x.Description));
+                RequirementsText.text = requirementsLabel + string.Join(Environment.NewLine, response.Requirements.Where(x => !x.Quest.IsCompleted).Select(x => x.Quest.Description));
             }
             else
             {

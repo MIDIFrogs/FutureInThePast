@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 7
   authorName: "\u0421\u0435\u0440\u044B\u0439 \u0432\u043E\u043B\u043A"
-  signColor: {r: 0.3490566, g: 0.31448025, b: 0.31448025, a: 1}
+  signColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 1}
   avatar: {fileID: 5088316998373936774, guid: 9ece89db37dcd9a419e01df33289c439, type: 3}

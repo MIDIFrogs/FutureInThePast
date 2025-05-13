@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a551ae8ae1056bc4dabd37eae2917e36, type: 3}
   m_Name: RedHat Interaction dialog
   m_EditorClassIdentifier: 
-  startupClip: {fileID: 11400000, guid: ef96929d9ed745747b19434ee0b6db74, type: 2}
+  clips: []

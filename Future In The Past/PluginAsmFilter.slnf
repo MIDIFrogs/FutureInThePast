@@ -4,6 +4,8 @@
     "projects": [
       "Assembly-CSharp.csproj",
       "FutureInThePast.csproj",
+      "UniTask.Linq.csproj",
+      "UniTask.TextMeshPro.csproj",
       "UniTask.csproj"
     ]
   }
