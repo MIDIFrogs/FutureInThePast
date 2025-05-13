@@ -46,6 +46,7 @@ namespace MIDIFrogs.FutureInThePast.Editor.Dialogs
             title.style.unityFontStyleAndWeight = UnityEngine.FontStyle.Bold;
             title.style.fontSize = 14;
             var input = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(bool));
+            input.AddManipulator(new EdgeConnector<Edge>(new GraphUpdateListener(this)));
             input.portName = "";
             inputContainer.Add(input);
 
@@ -273,6 +274,26 @@ namespace MIDIFrogs.FutureInThePast.Editor.Dialogs
                 }
 
                 _graphView.DeleteElements(port.connections);
+            }
+        }
+
+        private class GraphUpdateListener : IEdgeConnectorListener
+        {
+            private readonly LineNode node;
+            public GraphUpdateListener(LineNode node)
+            {
+                this.node = node;
+            }
+
+            public void OnDrop(GraphView graphView, Edge edge)
+            {
+                Debug.Log("Graph has been changed");
+                node._graphView.OnGraphChanged();
+            }
+
+            public void OnDropOutsidePort(Edge edge, Vector2 position)
+            {
+                node._graphView.OnGraphChanged();
             }
         }
     }
