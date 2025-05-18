@@ -100,24 +100,25 @@ namespace MIDIFrogs.FutureInThePast.Editor.Dialogs
             fontField.RegisterValueChangedCallback(evt => FontStyle = (TMPro.FontStyles)evt.newValue);
             extra.Add(fontField);
             var groupField = new TextField("Group Name") { value = GroupName };
-            groupField.RegisterValueChangedCallback(evt =>
-            {
-                if (Group == null)
-                {
-                    try
-                    {
-                        var group = graphView.CreateGroupAt(evt.newValue, position);
-                        group.AddElement(this);
-                    }
-                    catch // Because I don't know why, but adding elements from the graph to group produces an error.
-                    {
-                    }
-                }
-                else
-                {
-                    Group.title = evt.newValue;
-                }
-            });
+            groupField.SetEnabled(false);
+            //groupField.RegisterValueChangedCallback(evt =>
+            //{
+            //    if (Group == null)
+            //    {
+            //        try
+            //        {
+            //            var group = graphView.CreateGroupAt(evt.newValue, position);
+            //            group.AddElement(this);
+            //        }
+            //        catch // Because I don't know why, but adding elements from the graph to group produces an error.
+            //        {
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Group.title = evt.newValue;
+            //    }
+            //});
             extra.Add(groupField);
             extraFold.Add(extra);
             body.Add(extraFold);

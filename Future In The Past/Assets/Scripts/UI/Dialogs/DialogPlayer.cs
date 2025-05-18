@@ -27,6 +27,7 @@ namespace MIDIFrogs.FutureInThePast.UI.Dialogs
 
         private async void Start()
         {
+            autoplay = PlayerPrefs.GetInt("Dialogs.Autoplay", 0) == 1;
             QuestManager.Initialize();
             if (startupDialog != null)
             {
@@ -84,6 +85,13 @@ namespace MIDIFrogs.FutureInThePast.UI.Dialogs
                 dialogFrame.gameObject.SetActive(false);
                 pauseMenu.IsPaused = false;
             }
+        }
+
+        public void SwitchAutoplay(bool autoplay)
+        {
+            this.autoplay = autoplay;
+            PlayerPrefs.SetInt("Dialogs.Autoplay", autoplay ? 1 : 0);
+            PlayerPrefs.Save();
         }
     }
 }

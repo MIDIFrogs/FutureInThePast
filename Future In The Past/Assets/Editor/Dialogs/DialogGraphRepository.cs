@@ -65,6 +65,8 @@ namespace MIDIFrogs.FutureInThePast.Editor.Dialogs
                 node.Author = lineData.Author;
                 node.Text = lineData.Text;
                 node.Responses = lineData.Responses;
+                node.Voice = lineData.Voice;
+                node.FrameSplash = lineData.FrameSplash;
 
                 // assign group
                 if (!string.IsNullOrEmpty(lineData.GroupID) && groups.TryGetValue(lineData.GroupID, out var grp))
@@ -133,6 +135,8 @@ namespace MIDIFrogs.FutureInThePast.Editor.Dialogs
                     Text = node.Text,
                     GroupID = node.Group?.ID,
                     Position = node.GetPosition().position,
+                    Voice = node.Voice,
+                    FrameSplash = node.FrameSplash,
                     Responses = node.Responses
                 });
             }
@@ -148,8 +152,8 @@ namespace MIDIFrogs.FutureInThePast.Editor.Dialogs
                 {
                     Author = ld.Author,
                     Message = ld.Text,
-                    Voice = ld.Responses.FirstOrDefault()?.Trigger != null ? null : null, // extend as needed
-                    FrameSplash = null,
+                    Voice = ld.Voice,
+                    FrameSplash = ld.FrameSplash,
                     FontStyle = TMPro.FontStyles.Normal,
                     GroupName = null,
                     Responses = new List<Response>()
@@ -200,6 +204,8 @@ namespace MIDIFrogs.FutureInThePast.Editor.Dialogs
                     Text = line.Message,
                     Position = Vector2.zero,
                     GroupID = null,
+                    Voice = line.Voice,
+                    FrameSplash = line.FrameSplash,
                     Responses = line.Responses.Select(r => new DialogResponseData
                     {
                         Text = r.Text,

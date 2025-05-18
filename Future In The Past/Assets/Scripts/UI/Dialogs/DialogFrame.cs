@@ -20,25 +20,59 @@ namespace MIDIFrogs.FutureInThePast.UI.Dialogs
         [SerializeField] private Image splash;
         [SerializeField] private Image oldSplash;
 
-        [Header("Response properties")]
+        [Header("History properties")]
         [SerializeField] private DialogHistoryEntry historyEntryPrefab;
         [SerializeField] private GameObject historyPanel;
         [SerializeField] private RectTransform historyViewport;
+        
+        [Header("Response properties")]
         [SerializeField] private ResponseButton responsePrefab;
         [SerializeField] private GameObject responsePanel;
 
         private UniTaskCompletionSource<bool> waitButton;
 
-        public void OnNextFrame()
-        {
-            waitButton?.TrySetResult(true);
-        }
+        private ResponseButton[] availableResponses;
+        private int selectedResponse;
 
+        public int SelectedResponse
+        {
+            get => selectedResponse;
+            set
+            {
+                selectedResponse = value;
+                for (int i = 0; i < availableResponses.Length; i++)
+                {
+                    availableResponses[i].IsSelected = i == selectedResponse;
+                }
+            }
+        }
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.DownArrow))
             {
-                OnNextFrame();
+                do
+                {
+                    SelectedResponse = (SelectedResponse + 1) % availableResponses.Length;
+                }
+                while (!availableResponses[SelectedResponse].PassesRequirements);
+            }
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                do
+                {
+                    SelectedResponse = (SelectedResponse - 1 + availableResponses.Length) % availableResponses.Length;
+                }
+                while (!availableResponses[SelectedResponse].PassesRequirements);
+            }
+            else
+            {
+                for (int i = 0; i < Math.Min(10, availableResponses.Length); i++)
+                {
+                    if (Input.GetKeyDown(KeyCode.Alpha1 + i) && availableResponses[i].PassesRequirements)
+                    {
+                        SelectedResponse = i;
+                    }
+                }
             }
         }
 
@@ -59,10 +93,10 @@ namespace MIDIFrogs.FutureInThePast.UI.Dialogs
             }
             Debug.Log("AnimationLine completed");
 
-            // Assuming each 100 characters in text should be read in 1.5 seconds.
+            // Assuming each 100 characters in text should be read in 5 seconds.
             float textReadCoefficient = text.Length / 100f;
             // For autoplay to read after text
-            await UniTask.Delay(TimeSpan.FromSeconds(1.5) * textReadCoefficient, cancellationToken: token);
+            await UniTask.Delay(TimeSpan.FromSeconds(5) * textReadCoefficient, true, cancellationToken: token);
         }
 
         public async UniTask AnimateImage(Image image, float fromAlpha, float toAlpha, float speed, CancellationToken token)
@@ -141,27 +175,34 @@ namespace MIDIFrogs.FutureInThePast.UI.Dialogs
                 Destroy(child.gameObject);
             }
             List<UniTask> buttonTasks = new();
+            availableResponses = new ResponseButton[line.Responses.Count];
+            int i = 0;
             foreach (var response in line.Responses)
             {
                 var button = Instantiate(responsePrefab, responsePanel.transform);
+                availableResponses[i++] = button;
                 buttonTasks.Add(button.WaitForClick(response));
             }
-            if (!buttonTasks.Any())
+            SelectedResponse = Array.FindIndex(availableResponses, x => x.PassesRequirements);
+            int selectedButton;
+            // Check if we can autoplay
+            if (buttonTasks.Count == 1)
             {
                 // Wait for the button click
-                waitButton = new();
-
                 if (autoplay)
                 {
-                    await UniTask.WhenAny(UniTask.WhenAll(animation, fadeIn, fadeOut), waitButton.Task);
+                    await UniTask.WhenAny(UniTask.WhenAll(animation, fadeIn, fadeOut), buttonTasks[0]);
                 }
                 else
                 {
-                    await waitButton.Task;
+                    await buttonTasks[0];
                 }
+                selectedButton = 0;
             }
-
-            int selectedButton = await UniTask.WhenAny(buttonTasks);
+            else
+            {
+                selectedButton = await UniTask.WhenAny(buttonTasks);
+            }
             Debug.Log($"Selected button index: {selectedButton}");
 
             // Cancel incomplete animations

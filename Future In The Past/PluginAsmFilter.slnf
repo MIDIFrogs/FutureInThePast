@@ -2,7 +2,6 @@
   "solution": {
     "path": "Future In The Past.sln",
     "projects": [
-      "Assembly-CSharp.csproj",
       "FutureInThePast.csproj",
       "UniTask.Linq.csproj",
       "UniTask.TextMeshPro.csproj",

@@ -13,6 +13,8 @@ namespace MIDIFrogs.FutureInThePast.Editor.Metadata
         [field: SerializeField] public string Text { get; set; }
         [field: SerializeField] public List<DialogResponseData> Responses { get; set; }
         [field: SerializeField] public string GroupID { get; set; }
+        [field: SerializeField] public Sprite FrameSplash { get; set; }
+        [field: SerializeField] public AudioClip Voice { get; set; }
         [field: SerializeField] public Vector2 Position { get; set; }
     }
 }

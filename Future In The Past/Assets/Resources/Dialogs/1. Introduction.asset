@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 1. Introduction
   m_EditorClassIdentifier: 
   <StartLine>k__BackingField:
-    rid: 4877461376465371384
+    rid: 4877461489126735942
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4877461376465371384
+    - rid: 4877461489126735942
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 86ee9b09ad00e3d4ea7dc81b25b0b8eb, type: 2}
@@ -33,16 +33,16 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371385
-    - rid: 4877461376465371385
+        - rid: 4877461489126735943
+    - rid: 4877461489126735943
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []
         <Trigger>k__BackingField: {fileID: 0}
         <Text>k__BackingField: Continue
         <Continuation>k__BackingField:
-          rid: 4877461376465371386
-    - rid: 4877461376465371386
+          rid: 4877461489126735944
+    - rid: 4877461489126735944
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 86ee9b09ad00e3d4ea7dc81b25b0b8eb, type: 2}
@@ -58,16 +58,16 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371387
-    - rid: 4877461376465371387
+        - rid: 4877461489126735945
+    - rid: 4877461489126735945
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []
         <Trigger>k__BackingField: {fileID: 0}
         <Text>k__BackingField: Continue
         <Continuation>k__BackingField:
-          rid: 4877461376465371388
-    - rid: 4877461376465371388
+          rid: 4877461489126735946
+    - rid: 4877461489126735946
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 86ee9b09ad00e3d4ea7dc81b25b0b8eb, type: 2}
@@ -85,16 +85,16 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371389
-    - rid: 4877461376465371389
+        - rid: 4877461489126735947
+    - rid: 4877461489126735947
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []
         <Trigger>k__BackingField: {fileID: 0}
         <Text>k__BackingField: Continue
         <Continuation>k__BackingField:
-          rid: 4877461376465371390
-    - rid: 4877461376465371390
+          rid: 4877461489126735948
+    - rid: 4877461489126735948
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 86ee9b09ad00e3d4ea7dc81b25b0b8eb, type: 2}
@@ -111,16 +111,16 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371391
-    - rid: 4877461376465371391
+        - rid: 4877461489126735949
+    - rid: 4877461489126735949
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []
         <Trigger>k__BackingField: {fileID: 0}
         <Text>k__BackingField: Continue
         <Continuation>k__BackingField:
-          rid: 4877461376465371392
-    - rid: 4877461376465371392
+          rid: 4877461489126735950
+    - rid: 4877461489126735950
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 000cce02c95f2844db9c8be6390b576a, type: 2}
@@ -132,16 +132,16 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371393
-    - rid: 4877461376465371393
+        - rid: 4877461489126735951
+    - rid: 4877461489126735951
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []
         <Trigger>k__BackingField: {fileID: 0}
         <Text>k__BackingField: Continue
         <Continuation>k__BackingField:
-          rid: 4877461376465371394
-    - rid: 4877461376465371394
+          rid: 4877461489126735952
+    - rid: 4877461489126735952
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 000cce02c95f2844db9c8be6390b576a, type: 2}
@@ -155,16 +155,16 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371395
-    - rid: 4877461376465371395
+        - rid: 4877461489126735953
+    - rid: 4877461489126735953
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []
         <Trigger>k__BackingField: {fileID: 0}
         <Text>k__BackingField: Continue
         <Continuation>k__BackingField:
-          rid: 4877461376465371396
-    - rid: 4877461376465371396
+          rid: 4877461489126735954
+    - rid: 4877461489126735954
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 000cce02c95f2844db9c8be6390b576a, type: 2}
@@ -175,16 +175,16 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371397
-    - rid: 4877461376465371397
+        - rid: 4877461489126735955
+    - rid: 4877461489126735955
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []
         <Trigger>k__BackingField: {fileID: 0}
         <Text>k__BackingField: Continue
         <Continuation>k__BackingField:
-          rid: 4877461376465371398
-    - rid: 4877461376465371398
+          rid: 4877461489126735956
+    - rid: 4877461489126735956
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 000cce02c95f2844db9c8be6390b576a, type: 2}
@@ -197,16 +197,16 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371399
-    - rid: 4877461376465371399
+        - rid: 4877461489126735957
+    - rid: 4877461489126735957
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []
         <Trigger>k__BackingField: {fileID: 0}
         <Text>k__BackingField: Continue
         <Continuation>k__BackingField:
-          rid: 4877461376465371400
-    - rid: 4877461376465371400
+          rid: 4877461489126735958
+    - rid: 4877461489126735958
       type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Author>k__BackingField: {fileID: 11400000, guid: 86ee9b09ad00e3d4ea7dc81b25b0b8eb, type: 2}
@@ -225,8 +225,8 @@ MonoBehaviour:
         <FontStyle>k__BackingField: 0
         <GroupName>k__BackingField: 
         <Responses>k__BackingField:
-        - rid: 4877461376465371401
-    - rid: 4877461376465371401
+        - rid: 4877461489126735959
+    - rid: 4877461489126735959
       type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
       data:
         <Requirements>k__BackingField: []

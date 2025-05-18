@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a551ae8ae1056bc4dabd37eae2917e36, type: 3}
+  m_Name: 0. Just test dialog
+  m_EditorClassIdentifier: 
+  <StartLine>k__BackingField:
+    rid: 4877461489126736004
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4877461489126736004
+      type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Author>k__BackingField: {fileID: 11400000, guid: ec1b11efc3cf31b40bf82cc0fad8fcce, type: 2}
+        <Message>k__BackingField: "\u0427\u0443\u044E \u0443 \u0442\u0435\u0431\u044F
+          \u0432 \u0438\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0435 \u043F\u0438\u0440\u043E\u0436\u043A\u0438.
+          \u041F\u043E\u0434\u0435\u043B\u0438\u0448\u044C\u0441\u044F?"
+        <Voice>k__BackingField: {fileID: 0}
+        <FrameSplash>k__BackingField: {fileID: -5864237088634561792, guid: 9d9204e689936d84aa63ac9807ab1c5a, type: 3}
+        <FontStyle>k__BackingField: 0
+        <GroupName>k__BackingField: 
+        <Responses>k__BackingField:
+        - rid: 4877461489126736005
+        - rid: 4877461489126736006
+    - rid: 4877461489126736005
+      type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Requirements>k__BackingField: []
+        <Trigger>k__BackingField: {fileID: 11400000, guid: 897f411f03a28f545a8a2603e0701a01, type: 2}
+        <Text>k__BackingField: "\u0414\u0430"
+        <Continuation>k__BackingField:
+          rid: 4877461489126736007
+    - rid: 4877461489126736006
+      type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Requirements>k__BackingField: []
+        <Trigger>k__BackingField: {fileID: 0}
+        <Text>k__BackingField: "[\u0421\u043E\u0432\u0440\u0430\u0442\u044C] \u041D\u0435\u0442"
+        <Continuation>k__BackingField:
+          rid: 4877461489126736008
+    - rid: 4877461489126736007
+      type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Author>k__BackingField: {fileID: 11400000, guid: ec1b11efc3cf31b40bf82cc0fad8fcce, type: 2}
+        <Message>k__BackingField: "\u0410 \u0442\u0435\u043F\u0435\u0440\u044C \u044F
+          \u0441\u044A\u0435\u043C \u043F\u043E\u0440\u043E\u0441\u044F\u0442!"
+        <Voice>k__BackingField: {fileID: 0}
+        <FrameSplash>k__BackingField: {fileID: -5864237088634561792, guid: 9d9204e689936d84aa63ac9807ab1c5a, type: 3}
+        <FontStyle>k__BackingField: 0
+        <GroupName>k__BackingField: 
+        <Responses>k__BackingField:
+        - rid: 4877461489126736009
+        - rid: 4877461489126736010
+    - rid: 4877461489126736008
+      type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Author>k__BackingField: {fileID: 11400000, guid: ec1b11efc3cf31b40bf82cc0fad8fcce, type: 2}
+        <Message>k__BackingField: "\u0421\u0443\u0434\u044F \u043F\u043E \u0437\u0430\u043F\u0430\u0445\u0443,
+          \u043E\u043D\u0438 \u0432\u0441\u0451 \u0436\u0435 \u0443 \u0442\u0435\u0431\u044F
+          \u0435\u0441\u0442\u044C. \u041D\u0443 \u0447\u0442\u043E \u0436, \u043D\u0435\u0442
+          \u0442\u0430\u043A \u043D\u0435\u0442. "
+        <Voice>k__BackingField: {fileID: 0}
+        <FrameSplash>k__BackingField: {fileID: 7747261447438941254, guid: 5964aa7886204754c9ee68dd737ff10f, type: 3}
+        <FontStyle>k__BackingField: 0
+        <GroupName>k__BackingField: 
+        <Responses>k__BackingField:
+        - rid: 4877461489126736011
+    - rid: 4877461489126736009
+      type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Requirements>k__BackingField:
+        - {fileID: 11400000, guid: 897f411f03a28f545a8a2603e0701a01, type: 2}
+        <Trigger>k__BackingField: {fileID: 11400000, guid: 897f411f03a28f545a8a2603e0701a01, type: 2}
+        <Text>k__BackingField: "\u041D\u0435 \u0435\u0448\u044C \u0438\u0445, \u043B\u0443\u0447\u0448\u0435
+          \u0441\u044A\u0435\u0448\u044C \u043F\u0438\u0440\u043E\u0436\u043E\u043A!"
+        <Continuation>k__BackingField:
+          rid: 4877461489126736012
+    - rid: 4877461489126736010
+      type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Requirements>k__BackingField: []
+        <Trigger>k__BackingField: {fileID: 0}
+        <Text>k__BackingField: "[Press F to pay respect] \u041F\u043E\u0440\u043E\u0441\u044F\u0442\u0430,
+          \u043C\u043D\u0435 \u0436\u0430\u043B\u044C"
+        <Continuation>k__BackingField:
+          rid: 4877461489126736013
+    - rid: 4877461489126736011
+      type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Requirements>k__BackingField: []
+        <Trigger>k__BackingField: {fileID: 0}
+        <Text>k__BackingField: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+        <Continuation>k__BackingField:
+          rid: 4877461489126736007
+    - rid: 4877461489126736012
+      type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Author>k__BackingField: {fileID: 11400000, guid: ec1b11efc3cf31b40bf82cc0fad8fcce, type: 2}
+        <Message>k__BackingField: "*\u041D\u044F\u043C-\u043D\u044F\u043C*, \u043A\u0430\u043A\u043E\u0439
+          \u0432\u043A\u0443\u0444\u043D\u044B\u0439 \u043F\u0438\u043E\u0436\u043E\u043A.
+          \u041F\u0430\u0441\u0438\u0431\u0430"
+        <Voice>k__BackingField: {fileID: 0}
+        <FrameSplash>k__BackingField: {fileID: -5864237088634561792, guid: 9d9204e689936d84aa63ac9807ab1c5a, type: 3}
+        <FontStyle>k__BackingField: 0
+        <GroupName>k__BackingField: 
+        <Responses>k__BackingField:
+        - rid: 4877461489126736014
+    - rid: 4877461489126736013
+      type: {class: DialogLine, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Author>k__BackingField: {fileID: 11400000, guid: ee28ffdf133314d408bcd236118503c4, type: 2}
+        <Message>k__BackingField: "\u0418\u0418\u0418\u0418\u0418\u0418, \u0441\u043F\u0430\u0441\u0438\u0438\u0438\u0442\u0435\u0435!"
+        <Voice>k__BackingField: {fileID: 0}
+        <FrameSplash>k__BackingField: {fileID: 7747261447438941254, guid: 5964aa7886204754c9ee68dd737ff10f, type: 3}
+        <FontStyle>k__BackingField: 0
+        <GroupName>k__BackingField: 
+        <Responses>k__BackingField:
+        - rid: 4877461489126736015
+    - rid: 4877461489126736014
+      type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Requirements>k__BackingField: []
+        <Trigger>k__BackingField: {fileID: 0}
+        <Text>k__BackingField: "\u0414\u0430 \u043D\u0435 \u0437\u0430 \u0447\u0442\u043E"
+        <Continuation>k__BackingField:
+          rid: -2
+    - rid: 4877461489126736015
+      type: {class: Response, ns: MIDIFrogs.FutureInThePast.Quests.Dialogs, asm: FutureInThePast}
+      data:
+        <Requirements>k__BackingField: []
+        <Trigger>k__BackingField: {fileID: 0}
+        <Text>k__BackingField: "[\u0423\u0439\u0442\u0438] \u041F\u0440\u043E\u0449\u0430\u0439\u0442\u0435,
+          \u0441\u0432\u0438\u043D\u044C\u0438. \u0410 \u044F \u043F\u043E\u0431\u0435\u0436\u0430\u043B..."
+        <Continuation>k__BackingField:
+          rid: -2

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17a534c8cf597c47829974484833a00, type: 3}
+  m_Name: 0. Just test dialog
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: NewDialog
+  <Groups>k__BackingField: []
+  <Lines>k__BackingField:
+  - <ID>k__BackingField: e519045a-5d3d-472b-84a4-161570f1cd4d
+    <Author>k__BackingField: {fileID: 11400000, guid: ec1b11efc3cf31b40bf82cc0fad8fcce, type: 2}
+    <Text>k__BackingField: "\u0427\u0443\u044E \u0443 \u0442\u0435\u0431\u044F \u0432
+      \u0438\u043D\u0432\u0435\u043D\u0442\u0430\u0440\u0435 \u043F\u0438\u0440\u043E\u0436\u043A\u0438.
+      \u041F\u043E\u0434\u0435\u043B\u0438\u0448\u044C\u0441\u044F?"
+    <Responses>k__BackingField:
+    - <Text>k__BackingField: "\u0414\u0430"
+      <NodeID>k__BackingField: 3bb188b1-c57b-4677-a895-de144bfb2e16
+      <Trigger>k__BackingField: {fileID: 11400000, guid: 897f411f03a28f545a8a2603e0701a01, type: 2}
+      <Requirements>k__BackingField: []
+    - <Text>k__BackingField: "[\u0421\u043E\u0432\u0440\u0430\u0442\u044C] \u041D\u0435\u0442"
+      <NodeID>k__BackingField: cdb58986-0786-441d-bbce-9bbffcfa0100
+      <Trigger>k__BackingField: {fileID: 0}
+      <Requirements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <FrameSplash>k__BackingField: {fileID: -5864237088634561792, guid: 9d9204e689936d84aa63ac9807ab1c5a, type: 3}
+    <Voice>k__BackingField: {fileID: 0}
+    <Position>k__BackingField: {x: 99, y: 1}
+  - <ID>k__BackingField: cdb58986-0786-441d-bbce-9bbffcfa0100
+    <Author>k__BackingField: {fileID: 11400000, guid: ec1b11efc3cf31b40bf82cc0fad8fcce, type: 2}
+    <Text>k__BackingField: "\u0421\u0443\u0434\u044F \u043F\u043E \u0437\u0430\u043F\u0430\u0445\u0443,
+      \u043E\u043D\u0438 \u0432\u0441\u0451 \u0436\u0435 \u0443 \u0442\u0435\u0431\u044F
+      \u0435\u0441\u0442\u044C. \u041D\u0443 \u0447\u0442\u043E \u0436, \u043D\u0435\u0442
+      \u0442\u0430\u043A \u043D\u0435\u0442. "
+    <Responses>k__BackingField:
+    - <Text>k__BackingField: "\u041F\u0440\u043E\u0434\u043E\u043B\u0436\u0438\u0442\u044C"
+      <NodeID>k__BackingField: 3bb188b1-c57b-4677-a895-de144bfb2e16
+      <Trigger>k__BackingField: {fileID: 0}
+      <Requirements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <FrameSplash>k__BackingField: {fileID: 7747261447438941254, guid: 5964aa7886204754c9ee68dd737ff10f, type: 3}
+    <Voice>k__BackingField: {fileID: 0}
+    <Position>k__BackingField: {x: 452, y: 398}
+  - <ID>k__BackingField: 3bb188b1-c57b-4677-a895-de144bfb2e16
+    <Author>k__BackingField: {fileID: 11400000, guid: ec1b11efc3cf31b40bf82cc0fad8fcce, type: 2}
+    <Text>k__BackingField: "\u0410 \u0442\u0435\u043F\u0435\u0440\u044C \u044F \u0441\u044A\u0435\u043C
+      \u043F\u043E\u0440\u043E\u0441\u044F\u0442!"
+    <Responses>k__BackingField:
+    - <Text>k__BackingField: "\u041D\u0435 \u0435\u0448\u044C \u0438\u0445, \u043B\u0443\u0447\u0448\u0435
+        \u0441\u044A\u0435\u0448\u044C \u043F\u0438\u0440\u043E\u0436\u043E\u043A!"
+      <NodeID>k__BackingField: 556ae8e3-268c-4cef-916b-670511f0d240
+      <Trigger>k__BackingField: {fileID: 11400000, guid: 897f411f03a28f545a8a2603e0701a01, type: 2}
+      <Requirements>k__BackingField:
+      - {fileID: 11400000, guid: 897f411f03a28f545a8a2603e0701a01, type: 2}
+    - <Text>k__BackingField: "[Press F to pay respect] \u041F\u043E\u0440\u043E\u0441\u044F\u0442\u0430,
+        \u043C\u043D\u0435 \u0436\u0430\u043B\u044C"
+      <NodeID>k__BackingField: 366da4b5-c21d-4e3e-9dad-f69a5578f43e
+      <Trigger>k__BackingField: {fileID: 0}
+      <Requirements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <FrameSplash>k__BackingField: {fileID: -5864237088634561792, guid: 9d9204e689936d84aa63ac9807ab1c5a, type: 3}
+    <Voice>k__BackingField: {fileID: 0}
+    <Position>k__BackingField: {x: 887, y: -7}
+  - <ID>k__BackingField: 366da4b5-c21d-4e3e-9dad-f69a5578f43e
+    <Author>k__BackingField: {fileID: 11400000, guid: ee28ffdf133314d408bcd236118503c4, type: 2}
+    <Text>k__BackingField: "\u0418\u0418\u0418\u0418\u0418\u0418, \u0441\u043F\u0430\u0441\u0438\u0438\u0438\u0442\u0435\u0435!"
+    <Responses>k__BackingField:
+    - <Text>k__BackingField: "[\u0423\u0439\u0442\u0438] \u041F\u0440\u043E\u0449\u0430\u0439\u0442\u0435,
+        \u0441\u0432\u0438\u043D\u044C\u0438. \u0410 \u044F \u043F\u043E\u0431\u0435\u0436\u0430\u043B..."
+      <NodeID>k__BackingField: 
+      <Trigger>k__BackingField: {fileID: 0}
+      <Requirements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <FrameSplash>k__BackingField: {fileID: 7747261447438941254, guid: 5964aa7886204754c9ee68dd737ff10f, type: 3}
+    <Voice>k__BackingField: {fileID: 0}
+    <Position>k__BackingField: {x: 1301, y: 152}
+  - <ID>k__BackingField: 556ae8e3-268c-4cef-916b-670511f0d240
+    <Author>k__BackingField: {fileID: 11400000, guid: ec1b11efc3cf31b40bf82cc0fad8fcce, type: 2}
+    <Text>k__BackingField: "*\u041D\u044F\u043C-\u043D\u044F\u043C*, \u043A\u0430\u043A\u043E\u0439
+      \u0432\u043A\u0443\u0444\u043D\u044B\u0439 \u043F\u0438\u043E\u0436\u043E\u043A.
+      \u041F\u0430\u0441\u0438\u0431\u0430"
+    <Responses>k__BackingField:
+    - <Text>k__BackingField: "\u0414\u0430 \u043D\u0435 \u0437\u0430 \u0447\u0442\u043E"
+      <NodeID>k__BackingField: 
+      <Trigger>k__BackingField: {fileID: 0}
+      <Requirements>k__BackingField: []
+    <GroupID>k__BackingField: 
+    <FrameSplash>k__BackingField: {fileID: -5864237088634561792, guid: 9d9204e689936d84aa63ac9807ab1c5a, type: 3}
+    <Voice>k__BackingField: {fileID: 0}
+    <Position>k__BackingField: {x: 1301, y: -279}

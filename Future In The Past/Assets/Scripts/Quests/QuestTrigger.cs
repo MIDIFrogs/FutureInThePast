@@ -13,7 +13,7 @@ namespace MIDIFrogs.FutureInThePast.Quests
         public event EventHandler Restored;
 
         [field: SerializeField] public string Tag { get; [Obsolete("For editor only")] set; }
-        [field: SerializeField] public string Description { get; }
+        [field: SerializeField] public string Description { get; [Obsolete("For editor only")] set; }
 
         public bool IsCompleted 
         {
